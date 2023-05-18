@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Reset CSS*/
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed, 
+        figure, figcaption, footer, header, hgroup, 
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure, 
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+        body {
+            line-height: 1;
+        }
+        ol, ul {
+            list-style: none;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        /* Fim Reset CSS*/
+
+        body{
+            height: 100vh;  
+            display: grid;
+            grid-template-rows: 60px 1fr 60px;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+                "header"
+                "content"
+                "footer "; 
+        }
+        .header{
+            grid-area: header;
+            display: grid;
+            grid-template-rows: 60px 1fr;
+            grid-template-columns: 300px 1fr;
+            grid-template-areas: 
+                "logo menu";  
+            background: linear-gradient(to right, #1e469a, #49a7c1);
+            color: #30a9dc;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: normal;
+        }
+        .logo{
+            grid-area: logo;
+            justify-self: flex-start;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .logo a{
+            text-decoration: none;
+            color: #30a9dc;
+        }
+        .menu{
+            grid-area: menu;
+
+            display: flex;
+            justify-content: left;
+            align-items: center;
+        }
+        .menu ul{
+            display: inline-flex;
+        }
+        .menu ul li{
+            padding-right: 20px;
+        }
+        /* .aside{
+            grid-area: aside;
+            background: linear-gradient(to right, #232526, #414345);
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height:90vh;
+        } */
+        .content{
+            padding: 20px;
+            text-align: center;
+        }
+        .content h1{
+            color:#0c73b8; 
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .content h2{
+            font-family: Arial, Helvetica, sans-serif; 
+            color: #e5a228;
+        }
+        .content a{
+            color:#f1672c;
+            font-size: 30px;
+            display: block;
+        }
+        footer{
+            background: linear-gradient(to right, #1e469a, #49a7c1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #30a9dc;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">       
+            <div class="logo">
+                <a href="#">
+                    Logo
+                </a>
+            </div>
+            
+            <nav class="menu">
+                <ul>
+                    <li>Home</li>
+                    <li>Página 01</li>
+                    <li>Página 02</li>
+                </ul>
+            </nav>      
+    </header>
+    <content class="content">
+        <h1>Aprenda
+            Front-end</h1>
+        <img
+            src="data:image/png;base64,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"
+            alt="">
+        <h2>Habilidades
+            Necessárias (HTML, CSS, JS)</h2>
+        <P>Para ser um bom Front-end é necessário aprender alguns conhecimentos
+            como: HTML(Linguahgem de marcação), CSS(Folhas de estilo em
+            cascata), JS(Código para Eféitos, Animações, etc.)</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati<br/>
+            magni beatae, rem, sunt est suscipit labore odio ut consectetur<br/>
+            nihil sint maxime error deserunt deleniti molestiae ab quidem<br/>
+            pariatur a.</p>
+        <pre>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui
+        repudiandae dolor officia labore, voluptates laudantium quam unde
+         quia quos sed nobis sequi enim consequatur reprehenderit
+            accusantium? Minus eveniet perferendis vitae?
+        </pre>
+            <img src="img/logo.png" alt="Logo" width="50px" height="50px">
+            <a href="#">Link</a>
+            <!-- Comentário HTML -->
+        </body>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias reprehenderit asperiores enim. Molestias fugiat eum, ut earum repellendus perferendis! A reprehenderit sit maiores. Saepe itaque neque aliquid corporis, corrupti voluptatibus.</p>
+    </content>
+    <footer><p>Todos os direitos reservados.</p></footer>
+</body>
+</html>
