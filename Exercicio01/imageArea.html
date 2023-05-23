@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Area</title>
+    <style>
+        body{
+            text-align: center;
+        }
+        img{
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body style="background-image: url('fundo-de-madeira-natural.jpg'); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;">    
+    <h2>Image Maps</h2>
+    <p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+    
+    <img src="https://www.w3schools.com/html/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+    
+    <map name="workmap">
+      <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://www.google.com/">
+      <area shape="rect" coords="290,172,333,250" alt="Phone" href="https://www.google.com/">
+      <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="https://www.google.com/">
+    </map> 
+    <br />  
+
+    <div>
+        <img src="imac.jpg" alt="imac" usemap="#imac" style="width: 461px; height: 261px;border:2px solid black">
+        <map name="imac">
+            <area shape="rect" coords="105,34,313,210"  alt="Computer" href="https://www.google.com/">
+            <area shape="circle" coords="343,177,20"  alt="caneca" href="https://www.google.com/">
+        </map>
+    </div>
+
+    <div>
+        <img src="imac.jpg" alt="imac" usemap="#imac2" style="width: 461px; height: 261px;border:2px solid red">
+        <map name="imac2">
+            <area shape="poly" coords="107,35,107,172,302,172,301,35"  alt="Computer" href="https://www.google.com/">
+        </map>
+    </div> 
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem laudantium quae animi, ipsum error suscipit esse fugiat minima optio ut reprehenderit molestiae quidem omnis consequuntur quas libero dolorem quasi. Consequuntur?</p>
+    </div>  
+    
+    <h2>The picture Element</h2>
+    <picture>
+        <source media="(min-width: 650px)" srcset="img-01.jpg">
+        <source media="(min-width: 465px)" srcset="img-02.jpg">
+        <img src="imac.jpg" style="width:auto;">
+    </picture>
+</body>
+</html>
