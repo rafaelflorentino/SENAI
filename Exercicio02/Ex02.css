@@ -19,7 +19,7 @@
 #tabela1 tr td:nth-child(4){
     background-color: lightgray;    
 }
-#tabela1 td:nth-child(2),td:nth-child(3),td:nth-child(5),td:nth-child(6){ 
+#tabela1 td:nth-child(2),#tabela1 td:nth-child(3), #tabela1 td:nth-child(5), #tabela1 td:nth-child(6){ 
     color: #0D5188;   
     font-weight: bolder;
 }
@@ -44,4 +44,140 @@
 }
 #tabela2{
     width: 100%;
+    border: 1px solid #DDDDDD;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #CCCCCC;
+}
+#tabela2 tr:nth-child(2) td:nth-child(1){
+    font-weight: bolder;  
+}
+#tabela2 tr td span{
+    margin-right: 5px;
+    margin-left: 7px;
+}
+/* Azul 3 primeiros*/
+#tabela2 tr:nth-child(2) td:nth-child(1) span{
+    color: #003366;
+}
+#tabela2 tr:nth-child(3) td:nth-child(1) span{
+    color: #003366;
+}
+#tabela2 tr:nth-child(4) td:nth-child(1) span{
+    color: #003366;
+}
+/*Azul Celeste*/
+#tabela2 tr:nth-child(5) td:nth-child(1) span{
+    color: #1398BE;
+}
+/*Primeira borda*/
+#tabela2 tr:nth-child(6) td{
+    border-bottom: solid 2px #CCCCCC;
+}
+/*Segunda borda*/
+#tabela2 tr:nth-child(19) td{
+    border-bottom: solid 2px #CCCCCC;
+}
+
+/* Amarelo*/
+#tabela2 tr:nth-child(7) td:nth-child(1) span{
+    color: #DE9800;
+}
+#tabela2 tr:nth-child(8) td:nth-child(1) span{
+    color: #DE9800;
+}
+#tabela2 tr:nth-child(9) td:nth-child(1) span{
+    color: #DE9800;
+}
+#tabela2 tr:nth-child(10) td:nth-child(1) span{
+    color: #DE9800;
+}
+#tabela2 tr:nth-child(11) td:nth-child(1) span{
+    color: #DE9800;
+}
+#tabela2 tr:nth-child(12) td:nth-child(1) span{
+    color: #DE9800;
+}
+#tabela2 tr:nth-child(13) td:nth-child(1) span{
+    color: #DE9800;
+}
+#tabela2 tr:nth-child(14) td:nth-child(1) span{
+    color: #DE9800;
+}
+/*Cinza*/
+#tabela2 tr:nth-child(15) td:nth-child(1) span{
+    color: #CCCCCC;
+}
+#tabela2 tr:nth-child(16) td:nth-child(1) span{
+    color: #CCCCCC;
+}
+#tabela2 tr:nth-child(17) td:nth-child(1) span{
+    color: #CCCCCC;
+}
+#tabela2 tr:nth-child(18) td:nth-child(1) span{
+    color: #CCCCCC;
+}
+#tabela2 tr:nth-child(19) td:nth-child(1) span{
+    color: #CCCCCC;
+}
+/*Vermelho*/
+#tabela2 tr:nth-child(20) td:nth-child(1) span{
+    color: #C91B04;
+}
+#tabela2 tr:nth-child(21) td:nth-child(1) span{
+    color: #C91B04;
+}
+#tabela2 tr:nth-child(22) td:nth-child(1) span{
+    color: #C91B04;
+}
+#tabela2 tr:nth-child(23) td:nth-child(1) span{
+    color: #C91B04;
+}
+
+#tabela2 tr td:nth-child(2){
+    color: black;
+    font-weight: bolder;
+}
+#tabela2 tr td:nth-child(1){
+    font-weight: bolder;  
+    color: #666666;
+}
+
+
+/*Quadrados da legenda*/
+#QuadradoAzul{
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background-color: #003366;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+#QuadradoCeleste{
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background-color: #1398BE;
+    border-radius: 5px;
+}
+#QuadradoAmarelo{
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background-color: #DE9800;
+    border-radius: 5px;
+    
+}
+#QuadradoVermelho{
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background-color: #C91B04;
+    border-radius: 5px;
+    
+}
+#legenda-bot{
+    text-transform: uppercase;
+    color: #CCCCCC;
+    font-weight: 200;
+    font-size: 13px;
 }
