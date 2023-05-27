@@ -8,10 +8,7 @@
     text-align: center;
     margin:  0 auto;
 }
-#tabela1 tabela, tabela1 th, tabela1 td {
-  border: 1px solid #C7E7F3;
-  border-collapse: collapse;
-}
+
 #tabela1 td:first-child{ /* odd Impar */
     background-color: lightgray;
     text-align: center;
@@ -33,6 +30,14 @@
     background-color: #66C5E3;
     color: black;
 }
+
+#tabela1 td:nth-child(3){
+    color: black;
+}
+#tabela1 td:nth-child(6){
+    color: black;
+}
+
 #tabela1 caption{
     background: #0D5188;
     color: white;
@@ -44,17 +49,45 @@
 }
 #tabela2{
     width: 100%;
-    border: 1px solid #DDDDDD;
+    border-right: 1px solid #DDDDDD;
+    border-left: 1px solid #DDDDDD;
+    border-bottom: 1px solid #DDDDDD;
     font-family: Arial, Helvetica, sans-serif;
-    color: #CCCCCC;
+    color: gray;
+    text-align: center;
 }
+#tabela2{
+    border-collapse: collapse;
+    width: 60%;
+    margin: 0 auto;
+}
+.left{
+    text-align: left;
+}
+#tabela2 td{
+    width: 5%;
+}
+#tabela2 th, #tabela2 td {
+    border-top: 1px solid #CCCCCC;
+   /* border-bottom: 1px solid gray;*/
+  }
 #tabela2 tr:nth-child(2) td:nth-child(1){
     font-weight: bolder;  
+    text-align: left;
 }
 #tabela2 tr td span{
     margin-right: 5px;
     margin-left: 7px;
 }
+#tabela2 tr, #tabela2 td, #tabela2 th{
+    padding: 10px;
+}
+
+#tabela2 td:nth-child(even){ /* even Par */
+    background-color: #eeeeee;
+    
+}
+
 /* Azul 3 primeiros*/
 #tabela2 tr:nth-child(2) td:nth-child(1) span{
     color: #003366;
@@ -70,15 +103,18 @@
     color: #1398BE;
 }
 /*Primeira borda*/
-#tabela2 tr:nth-child(6) td{
-    border-bottom: solid 2px #CCCCCC;
+#tabela2 tr:nth-child(5) td{
+    border-bottom: solid 3px #CCCCCC;
 }
 /*Segunda borda*/
-#tabela2 tr:nth-child(19) td{
-    border-bottom: solid 2px #CCCCCC;
+#tabela2 tr:nth-child(17) td{
+    border-bottom: solid 3px #CCCCCC;
 }
 
 /* Amarelo*/
+#tabela2 tr:nth-child(6) td:nth-child(1) span{
+    color: #DE9800;
+}
 #tabela2 tr:nth-child(7) td:nth-child(1) span{
     color: #DE9800;
 }
@@ -100,10 +136,10 @@
 #tabela2 tr:nth-child(13) td:nth-child(1) span{
     color: #DE9800;
 }
-#tabela2 tr:nth-child(14) td:nth-child(1) span{
-    color: #DE9800;
-}
 /*Cinza*/
+#tabela2 tr:nth-child(14) td:nth-child(1) span{
+    color: #CCCCCC;
+}
 #tabela2 tr:nth-child(15) td:nth-child(1) span{
     color: #CCCCCC;
 }
@@ -113,20 +149,17 @@
 #tabela2 tr:nth-child(17) td:nth-child(1) span{
     color: #CCCCCC;
 }
+/*Vermelho*/
 #tabela2 tr:nth-child(18) td:nth-child(1) span{
-    color: #CCCCCC;
+    color: #C91B04;
 }
 #tabela2 tr:nth-child(19) td:nth-child(1) span{
-    color: #CCCCCC;
+    color: #C91B04;
 }
-/*Vermelho*/
 #tabela2 tr:nth-child(20) td:nth-child(1) span{
     color: #C91B04;
 }
 #tabela2 tr:nth-child(21) td:nth-child(1) span{
-    color: #C91B04;
-}
-#tabela2 tr:nth-child(22) td:nth-child(1) span{
     color: #C91B04;
 }
 #tabela2 tr:nth-child(23) td:nth-child(1) span{
@@ -140,6 +173,7 @@
 #tabela2 tr td:nth-child(1){
     font-weight: bolder;  
     color: #666666;
+    width: 25%;
 }
 
 
@@ -180,4 +214,17 @@
     color: #CCCCCC;
     font-weight: 200;
     font-size: 13px;
+    text-align: left;
+}
+.legenda{
+    margin-left: 7px;
+    font-size: 13px;
+}
+#legenda-bot p{
+    text-align: left;
+}
+#exercicio2 h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
 }
