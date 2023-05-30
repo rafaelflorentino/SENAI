@@ -1,0 +1,25 @@
+git init // iniciar projeto
+git add . ou // git add nova_pagina.html
+
+git status // mosta o status
+git config --global user.name "Rafael" // cria usuário
+git config --global user.email "rafael.f.barbosa@aluno.senai.br" // coloca email
+git commit -m "Fist Commit" // criando commit
+cls // Limpar tela
+git log // q para sair do end
+git branch -M main // Mudar o nome dao galho
+git branch new_page // Criar nova branch(galho)
+
+git checkout new_page  // Entra na nova branch
+
+//repositorio online
+git remote add origin https://github.com/rafaelflorentinobarbosa/Git.git
+
+git pull
+
+git clone https://
+git config --global --unset user.name // remover usuario
+git config --global --unset user.email // remover email
+git config --list // lista de usuario git  no pc
+
+plugin Git Graph
