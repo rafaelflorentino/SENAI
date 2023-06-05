@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        #menu{
+            margin-bottom: 20px;
+            margin-Top: 20px;
+        }
+        #menu a{
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+            background-color: #f2f2f2;
+            border: 1px solid black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        label{
+            font-weight: bolder;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #formulario{
+            clear: both;
+            padding: 10px;
+            border: 1px solid #909090;
+            width: 915px;
+        }
+        input[type="button"]{
+            /*background-color: red;*/
+            padding: 8px;
+        }
+        datalist{
+            height: 25px;
+            width: 100%;            
+        }
+        img{
+            align-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="menu">
+        <a href="#"><img src="avaliações.jpg" alt="avaliações" align="center"> Avaliações</a>
+        <a href="#"><img src="alunos.jpg" alt="alunos" align="center">Alunos</a>
+        <a href="#"><img src="frequencia.jpg" alt="frequencia" align="center">Frequêcia</a>
+        <a href="#"><img src="notas.jpg" alt="notas" align="center">Notas Avaliação</a>
+        <a href="#"><img src="ocorrencias.jpg" alt="ocorrencias" align="center">Ocorrências</a>
+        <a href="#"><img src="plano.jpg" alt="avaliações" align="center">Plano de aula</a>
+
+    </div>
+    <div id="formulario">
+        <form action="#">
+            <table>
+                <tr>
+                    <td>
+                        <label for="etapas">Selecione os filtros etapas:</label>
+                      
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input list="etapas" name="etapas">
+                        <datalist id="etapas">
+                        <option value="etapa1">
+                        <option value="etapa2">
+                        <option value="etapa3">
+                        <option value="etapa4">
+                        <option value="etapa5">
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="subturmas">Subturma:</label><br/>
+                        <input list="subturmas" name="subturmas">
+                        <datalist id="subturmas">
+                        <option value="etapa1">
+                        <option value="etapa2">
+                        <option value="etapa3">
+                        <option value="etapa4">
+                        <option value="etapa5">
+                        </datalist>  
+                    </td>
+                </tr>
+                <tr>
+                    <td> <label for="de">Data de frequência de: </label> </td>
+                    <td> <input type="date"></td>
+                </tr>
+                <tr>
+                    <td> <label for="ate">Data de frequência até: </label> </td>
+                    <td> <input type="date"></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="button" value="Selecionar">
+                        <input type="button" value="Salvar">
+                        <input type="button" value="Liberar Etapa">
+                    </td>
+                </tr>
+            </table>
+        </form>    
+    </div>
+</body>
+</html>
