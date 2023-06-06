@@ -24,21 +24,59 @@
         }
         #formulario{
             clear: both;
-            padding: 10px;
-            border: 1px solid #909090;
             width: 915px;
         }
         input[type="button"]{
             /*background-color: red;*/
             padding: 8px;
+            margin-right: 5px;
         }
-        datalist{
+        .full{
             height: 25px;
             width: 100%;            
         }
         img{
             align-content: center;
         }
+        fieldset{
+            margin: 0px;
+            padding: 2px;
+        }
+        .data{
+            height: 25px;
+            width: 100%;            
+        }
+        .escondida{
+            display: none;
+            position: absolute;
+            top: 130px;
+            left: 15px;
+            z-index: 100000;
+            background-color: white;
+            
+        }
+        select{
+            -webkit-appearance: none;
+            -moz-appearance:    none;
+            appearance:         none;
+            width: 100%;
+            height: 32px;
+            background: url('seta.jpg') 99.5% 50% no-repeat;
+        }
+
+        .escondida,  .escondida td,  .escondida th{
+            border: 1px solid gray;
+            border-collapse: collapse;
+        }
+        .escondida th{
+            background-color: lightgray;
+        }
+        .escondida th,  .escondida td{
+            padding: 5px 10px;
+        }
+        .tab:focus + .escondida{
+            display: block;
+        }        
     </style>
 </head>
 <body>
@@ -52,55 +90,123 @@
 
     </div>
     <div id="formulario">
+        <fieldset>
         <form action="#">
             <table>
                 <tr>
-                    <td>
+                    <td colspan="2">
                         <label for="etapas">Selecione os filtros etapas:</label>
-                      
                     </td>
                 </tr>
                 <tr>
-                    <td>
-                        <input list="etapas" name="etapas">
-                        <datalist id="etapas">
-                        <option value="etapa1">
-                        <option value="etapa2">
-                        <option value="etapa3">
-                        <option value="etapa4">
-                        <option value="etapa5">
-                        </datalist>
+                    <td colspan="2">
+
+                         <select name="" class="tab">
+                            <table class="escondida">
+                                <tr>
+                                    <th>Cód. etapa</th>
+                                    <th>Etapa</th>
+                                    <th>Dt. início da etapa</th>
+                                    <th>Dt. limite da etapa</th>
+                                    <th>Dt. início da digitação</th>
+                                    <th>Dt. limite da digitação</th>
+                                    <th>Disponível para alunos</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Mês 01</td>
+                                    <td>15/05/2023</td>
+                                    <td>31/05/2023</td>
+                                    <td> </td>
+                                    <td>04/09/2023</td>
+                                    <td>Sim</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Mês 02</td>
+                                    <td>01/06/2023</td>
+                                    <td>30/06/2023</td>
+                                    <td> </td>
+                                    <td>04/09/2023</td>
+                                    <td>Sim</td>
+                                </tr> 
+                                <tr>
+                                    <td>3</td>
+                                    <td>Mês 03</td>
+                                    <td>01/07/2023</td>
+                                    <td>31/07/2023</td>
+                                    <td> </td>
+                                    <td>04/09/2023</td>
+                                    <td>Sim</td>
+                                </tr>                          
+                                <tr>
+                                    <td>4</td>
+                                    <td>Mês 04</td>
+                                    <td>01/08/2023</td>
+                                    <td>30/08/2023</td>
+                                    <td> </td>
+                                    <td>04/09/2023</td>
+                                    <td>Sim</td>
+                                </tr>  
+                                <tr>
+                                    <td>13</td>
+                                    <td>Total de Faltas</td>
+                                    <td>15/05/2023</td>
+                                    <td>30/08/2023</td>
+                                    <td> </td>
+                                    <td>04/09/2023</td>
+                                    <td>Sim</td>
+                                </tr>  
+                                <tr>
+                                    <td>14</td>
+                                    <td>% Frequência</td>
+                                    <td>15/05/2023</td>
+                                    <td>30/08/2023</td>
+                                    <td> </td>
+                                    <td>04/09/2023</td>
+                                    <td>Sim</td>
+                                </tr>                                    
+                            </table>    
+
+                        </select> 
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td colspan="2">
                         <label for="subturmas">Subturma:</label><br/>
-                        <input list="subturmas" name="subturmas">
-                        <datalist id="subturmas">
-                        <option value="etapa1">
-                        <option value="etapa2">
-                        <option value="etapa3">
-                        <option value="etapa4">
-                        <option value="etapa5">
-                        </datalist>  
+                        <select name="" id="">
+                            <option value=""></option>
+                            <option value="subturma numero 1">subturma número 1</option>
+                            <option value="subturma numero 2">subturma número 2</option>
+                            <option value="subturma numero 3">subturma número 3</option>
+                            <option value="subturma numero 4">subturma número 4</option>
+                            <option value="subturma numero 5">subturma número 5</option>
+                        </select> 
                     </td>
+                </tr>
+                <tr>
+                    <td><br></td>
                 </tr>
                 <tr>
                     <td> <label for="de">Data de frequência de: </label> </td>
-                    <td> <input type="date"></td>
+                    <td> <input type="date" class="data" value=""></td>
                 </tr>
                 <tr>
                     <td> <label for="ate">Data de frequência até: </label> </td>
-                    <td> <input type="date"></td>
+                    <td> <input type="date" class="data" value=""></td>
                 </tr>
 
+                <tr>
+                    <td><br></td>
+                </tr>
                 <tr>
                     <td>
                         <input type="button" value="Selecionar">
                         <input type="button" value="Salvar">
-                        <input type="button" value="Liberar Etapa">
+                        <input type="button" value="Liberar etapa">
                     </td>
                 </tr>
+            </fieldset>
             </table>
         </form>    
     </div>
