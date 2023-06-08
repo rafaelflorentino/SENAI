@@ -62,7 +62,7 @@
             -moz-appearance:    none;
             appearance:         none;
             width: 100%;
-            height: 32px;
+            height: 34px;
             background: url('seta.jpg') 99.5% 50% no-repeat;
             
         }
@@ -70,13 +70,22 @@
             -webkit-appearance: none;
             -moz-appearance:    none;
             appearance:         none;
-            width: 100%;
+            width: 390px;
             height: 32px;
             background: url('seta.jpg') 99.5% 50% no-repeat;
             border: 1px solid gray;
+            padding: 0px;
+            padding-right: 25px;
         }
         .escondida{
             border-collapse: collapse;
+            border-collapse: collapse;
+            -webkit-touch-callout: none;  /* iPhone OS, Safari */
+            -webkit-user-select: none;    /* Chrome, Safari 3 */
+            -khtml-user-select: none;     /* Safari 2 */
+            -moz-user-select: none;       /* Firefox */
+            -ms-user-select: none;        /* IE10+ */
+            user-select: none;            /* Possível implementação no futuro */
         }
         .escondida td,  .escondida th{
             border: 1px solid gray;
@@ -97,7 +106,10 @@
         }  
         input:focus, select:focus{
             outline: 0;
-        }    
+        }   
+        .escondida:hover{
+            display: block;
+        }
         #turma{
             margin: 0px;
             padding: 0px;
@@ -148,13 +160,13 @@
             <table>
                 <tr>
                     <td colspan="2">
-                        <label for="etapas">Selecione os filtros etapas:</label>
+                        <label for="etapas">Selecione os filtros Etapa:</label>
                     </td>
                 </tr>
                 <tr>
                     <td colspan="2">
 
-                         <input type="text" name="" class="tab">
+                         <input type="text" name="etapas" class="tab" id="etapas">
                             <table class="escondida">
                                 <tr>
                                     <th>Cód. etapa</th>
@@ -229,11 +241,11 @@
                         <label for="subturmas">Subturma:</label><br/>
                         <select name="" id="">
                             <option value=""></option>
-                            <option value="subturma numero 1">subturma número 1</option>
-                            <option value="subturma numero 2">subturma número 2</option>
-                            <option value="subturma numero 3">subturma número 3</option>
-                            <option value="subturma numero 4">subturma número 4</option>
-                            <option value="subturma numero 5">subturma número 5</option>
+                            <option value="subturma numero 1"> Subturma número 1</option>
+                            <option value="subturma numero 2"> Subturma número 2</option>
+                            <option value="subturma numero 3"> Subturma número 3</option>
+                            <option value="subturma numero 4"> Subturma número 4</option>
+                            <option value="subturma numero 5"> Subturma número 5</option>
                         </select> 
                     </td>
                 </tr>
