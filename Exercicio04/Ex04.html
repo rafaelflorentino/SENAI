@@ -66,8 +66,19 @@
             background: url('seta.jpg') 99.5% 50% no-repeat;
             
         }
-
-        .escondida,  .escondida td,  .escondida th{
+        .tab{
+            -webkit-appearance: none;
+            -moz-appearance:    none;
+            appearance:         none;
+            width: 100%;
+            height: 32px;
+            background: url('seta.jpg') 99.5% 50% no-repeat;
+            border: 1px solid gray;
+        }
+        .escondida{
+            border-collapse: collapse;
+        }
+        .escondida td,  .escondida th{
             border: 1px solid gray;
             border-collapse: collapse;
         }
@@ -79,10 +90,14 @@
         }
         .escondida tr:hover{
             background-color: rgb(228, 228, 228);
+            cursor: pointer;
         }
         .tab:focus + .escondida{
             display: block;
         }  
+        input:focus, select:focus{
+            outline: 0;
+        }    
         #turma{
             margin: 0px;
             padding: 0px;
@@ -139,7 +154,7 @@
                 <tr>
                     <td colspan="2">
 
-                         <select name="" class="tab">
+                         <input type="text" name="" class="tab">
                             <table class="escondida">
                                 <tr>
                                     <th>Cód. etapa</th>
@@ -206,7 +221,7 @@
                                 </tr>                                    
                             </table>    
 
-                        </select> 
+                        
                     </td>
                 </tr>
                 <tr>

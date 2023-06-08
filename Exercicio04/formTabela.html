@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    ul {
+        background-color: #e6e6e6;
+    }
+
+    li {
+        border: 1px solid black;
+        background-color: gray;
+    }
+
+    option {
+        background-color: red;
+        border: 1px solid pink;
+        display: inline-block;
+        text-align: center;
+    }
+
+    #etapas {
+        /* background-color: red; */
+        outline: none;
+        height: 23px;
+    }
+
+    img {
+        pointer-events: none;
+    }
+    #escondida{
+        display: none;   
+        position: absolute;
+        z-index: 100000;
+        background-color: white;
+    }
+
+    #escondida,
+    #escondida td,
+    #escondida th {
+        border-collapse: collapse;
+        -webkit-touch-callout: none;  /* iPhone OS, Safari */
+        -webkit-user-select: none;    /* Chrome, Safari 3 */
+        -khtml-user-select: none;     /* Safari 2 */
+        -moz-user-select: none;       /* Firefox */
+        -ms-user-select: none;        /* IE10+ */
+        user-select: none;            /* Possível implementação no futuro */
+        /* cursor: default; */  
+        margin-top: -1px;       
+    }
+    #escondida td,
+    #escondida th {
+        border: 1px solid gray;
+    }
+
+    #escondida th {
+        background-color: lightgray;
+    }
+
+    #escondida th,
+    #escondida td {
+        padding: 5px 10px;
+    }
+
+    #escondida tr:hover {
+        background-color: rgb(228, 228, 228);
+        
+    }
+    #escondida td:hover{
+        cursor: pointer;
+    }
+    #escondida th:hover{
+        cursor: context-menu;
+    }
+    #botao, #botao tr, #botao td{
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+        border-collapse: collapse;
+        
+    }
+    #botao{
+        border: 1px solid  gray;
+    }
+    #botao:hover + #escondida{
+            display: block;
+        } 
+    #escondida:hover{
+        display: block;
+    } 
+
+</style>
+
+<body>
+    <div>
+        <label for="etapas">Selecione os filtros de Etapas:</label>
+        <table id="botao">
+            <tr>
+                <td>
+                    <input class="" id="etapas" name="" type="text" autocomplete="off" style="border: 0px!important;">
+                </td>
+                <td style=" cursor: pointer; white-space: nowrap;">
+                    <img src="seta.jpg" alt="v" align="center">
+                </td>
+            </tr>
+        </table>
+            <tr>
+                <table id="escondida">
+                    <tr>
+                        <th>Cód. etapa</th>
+                        <th>Etapa</th>
+                        <th>Dt. início da etapa</th>
+                        <th>Dt. limite da etapa</th>
+                        <th>Dt. início da digitação</th>
+                        <th>Dt. limite da digitação</th>
+                        <th>Disponível para alunos</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Mês 01</td>
+                        <td>15/05/2023</td>
+                        <td>31/05/2023</td>
+                        <td> </td>
+                        <td>04/09/2023</td>
+                        <td>Sim</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Mês 02</td>
+                        <td>01/06/2023</td>
+                        <td>30/06/2023</td>
+                        <td> </td>
+                        <td>04/09/2023</td>
+                        <td>Sim</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Mês 03</td>
+                        <td>01/07/2023</td>
+                        <td>31/07/2023</td>
+                        <td> </td>
+                        <td>04/09/2023</td>
+                        <td>Sim</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Mês 04</td>
+                        <td>01/08/2023</td>
+                        <td>30/08/2023</td>
+                        <td> </td>
+                        <td>04/09/2023</td>
+                        <td>Sim</td>
+                    </tr>
+                    <tr>
+                        <td>13</td>
+                        <td>Total de Faltas</td>
+                        <td>15/05/2023</td>
+                        <td>30/08/2023</td>
+                        <td> </td>
+                        <td>04/09/2023</td>
+                        <td>Sim</td>
+                    </tr>
+                    <tr>
+                        <td>14</td>
+                        <td>% Frequência</td>
+                        <td>15/05/2023</td>
+                        <td>30/08/2023</td>
+                        <td> </td>
+                        <td>04/09/2023</td>
+                        <td>Sim</td>
+                    </tr>
+                </table>
+            </tr>
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <label for="subturmas">Subturma:</label><br/>
+                        <select name="" id="">
+                            <option value=""></option>
+                            <option value="subturma numero 1">subturma número 1</option>
+                            <option value="subturma numero 2">subturma número 2</option>
+                            <option value="subturma numero 3">subturma número 3</option>
+                            <option value="subturma numero 4">subturma número 4</option>
+                            <option value="subturma numero 5">subturma número 5</option>
+                        </select> 
+                    </td>
+                </tr>
+            </table>
+        
+    </div>
+
+</body>
+
+</html>
