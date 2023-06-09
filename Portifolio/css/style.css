@@ -1,0 +1,176 @@
+/* Início Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* Fim Reset */
+
+/* Início Header */
+header{
+    width: 100%;
+    height: 92px;
+    background: #111111; /* background: #1d1d20; */   
+    color: white;
+    border-bottom: 1px solid #ff9f00;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.1em;
+}
+header a, footer a{
+    color: white;
+    text-decoration: none;
+    
+}
+header a, div, ul, li{
+    display: inline-block;
+}
+header nav{
+    max-width: 1040px;
+    margin: 0 auto;
+    margin: 0 auto;
+    padding: 0px 10px;
+}
+#logo{
+    width: 80px;
+    height: 72px;
+    background: url('../img/logoR2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    color: transparent; 
+    margin-top: 10px;
+}
+#mobile{
+    float: right;
+    display: none;
+
+}
+#mobile a{
+    font-size: 37px;
+    margin-top: 28px;
+    margin-right: 10px;
+}
+#mobile a:hover i, footer a:hover{
+    color: #ff9f00
+}
+#menu{
+    float: right;
+    margin-top: 40px;
+}
+#menu ul li{
+    margin-left: 10px;
+}
+#menu ul li a:hover{
+    color: #ff9f00
+}
+
+/* Fim Header */
+
+/*Início Main*/
+main{
+ 
+}
+/* Início Home */
+#home #textoHome{
+    width: 400px;
+    float: left;
+    display: block;
+}
+#home #foto{
+    width: 400px;
+    float: right; 
+    display: block;
+}
+#home #foto img{
+       
+}
+
+/* Fim Homer */
+.container{
+    width: 1045px;
+    height: 439px;
+    display: block;
+    margin: 0 auto;
+    background-color: rgb(248, 248, 248);
+}
+/* Fim Main */
+
+/* Início footer*/
+footer{
+    width: 100%;
+    height: 92px;
+    background: #111111; /* background: #1d1d20; */   
+    color: white;
+    border-top: 1px solid #ff9f00;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.1em; 
+    text-align: center;   
+}
+footer #redes{
+    margin-top: 40px;
+}
+footer #redes li{
+    margin-right: 15px;
+}
+footer i{
+    font-size: 25px;
+}
+footer a{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+}
+footer a i{
+    margin-right: 5px;
+}
+/* Fim footer*/
+
+/* Responsividade */
+
+@media (max-width: 669px){
+    #menu{
+        display: none;
+    }
+    #mobile{
+        display: block;
+    }
+}

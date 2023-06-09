@@ -27,7 +27,6 @@
             width: 915px;
         }
         input[type="button"]{
-            /*background-color: red;*/
             padding: 8px;
             margin-right: 5px;
             color: gray;
@@ -38,6 +37,7 @@
         }
         img{
             align-content: center;
+            pointer-events: none;
         }
         fieldset{
             margin: 0px;
@@ -54,8 +54,6 @@
             left: 15px;
             z-index: 100000;
             background-color: white;
-            
-            
         }
         select{
             -webkit-appearance: none;
@@ -63,8 +61,7 @@
             appearance:         none;
             width: 100%;
             height: 34px;
-            background: url('seta.jpg') 99.5% 50% no-repeat;
-            
+            background: url('seta.jpg') 99.5% 50% no-repeat;           
         }
         .tab{
             -webkit-appearance: none;
@@ -113,7 +110,6 @@
         #turma{
             margin: 0px;
             padding: 0px;
-            /* border:1px solid black; */
             border-radius: 6px;
             font-family: Arial, Helvetica, sans-serif;
         } 
@@ -123,7 +119,6 @@
             background-image: linear-gradient(white, lightgray);
             padding: 5px;
             border-bottom: 1px solid gray;
-            
         }
         #turma p{ 
             margin-left: 20px;
@@ -133,8 +128,6 @@
             border-bottom: 1px solid gray;
             font-size: 19px;
         }
-
-
     </style>
 </head>
 <body>
@@ -167,8 +160,8 @@
                     <td colspan="2">
 
                          <input type="text" name="etapas" class="tab" id="etapas">
-                            <table class="escondida">
-                                <tr>
+                            <table class="escondida" id="escondida">
+                                <tr id="um">
                                     <th>Cód. etapa</th>
                                     <th>Etapa</th>
                                     <th>Dt. início da etapa</th>
@@ -176,7 +169,7 @@
                                     <th>Dt. início da digitação</th>
                                     <th>Dt. limite da digitação</th>
                                     <th>Disponível para alunos</th>
-                                </tr>
+                                </tr id='dois'>
                                 <tr>
                                     <td>1</td>
                                     <td>Mês 01</td>
@@ -185,7 +178,7 @@
                                     <td> </td>
                                     <td>04/09/2023</td>
                                     <td>Sim</td>
-                                </tr>
+                                </tr id='tres'>
                                 <tr>
                                     <td>2</td>
                                     <td>Mês 02</td>
@@ -195,7 +188,7 @@
                                     <td>04/09/2023</td>
                                     <td>Sim</td>
                                 </tr> 
-                                <tr>
+                                <tr  id='quatro'>
                                     <td>3</td>
                                     <td>Mês 03</td>
                                     <td>01/07/2023</td>
@@ -204,7 +197,7 @@
                                     <td>04/09/2023</td>
                                     <td>Sim</td>
                                 </tr>                          
-                                <tr>
+                                <tr  id='cinco'>
                                     <td>4</td>
                                     <td>Mês 04</td>
                                     <td>01/08/2023</td>
@@ -213,7 +206,7 @@
                                     <td>04/09/2023</td>
                                     <td>Sim</td>
                                 </tr>  
-                                <tr>
+                                <tr  id='seis'>
                                     <td>13</td>
                                     <td>Total de Faltas</td>
                                     <td>15/05/2023</td>
@@ -222,7 +215,7 @@
                                     <td>04/09/2023</td>
                                     <td>Sim</td>
                                 </tr>  
-                                <tr>
+                                <tr  id='sete'>
                                     <td>14</td>
                                     <td>% Frequência</td>
                                     <td>15/05/2023</td>
@@ -231,9 +224,7 @@
                                     <td>04/09/2023</td>
                                     <td>Sim</td>
                                 </tr>                                    
-                            </table>    
-
-                        
+                            </table>                            
                     </td>
                 </tr>
                 <tr>
@@ -260,7 +251,6 @@
                     <td> <label for="ate">Data de frequência até: </label> </td>
                     <td> <input type="date" class="data" value=""></td>
                 </tr>
-
                 <tr>
                     <td><br></td>
                 </tr>
