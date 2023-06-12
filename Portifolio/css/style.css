@@ -109,6 +109,32 @@ header nav{
 /*Início Main*/
 
 /* Início Home */
+main .titulo{
+    text-align: center;
+}
+
+main .cont{
+    max-width: 1045px;
+    margin: 0px auto;
+    display: block;
+    padding: 30px;
+}
+
+main h1{
+    color: #ff9f00;
+    font-weight: bolder;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+main p{
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 15px;
+    line-height: 24px;
+}
+#home{
+     height: 100vh;
+}
 #home #home-container{
     max-width: 1045px;
     height: 439px;
@@ -126,7 +152,6 @@ header nav{
     font-family:cursive;
     font-size: 45px;
     line-height: 59px;
-   
 }
 #textoHome h1 span{
     color: #ff9f00;
@@ -144,7 +169,6 @@ header nav{
     float: right; 
     display: block;
 }
-
 
 #home  #botoes{
     margin-top: 30px;
@@ -180,14 +204,75 @@ header nav{
 
 /* Início Sobre*/
 #sobre{
-    background-color: lightsteelblue;
+    /* background-color: lightsteelblue; */
+    background-color: #f7f4f4;
+    height: 100vh;
 }
-#sobre .cont{
-    max-width: 1045px;
-    margin: 0px auto;
-    display: block;
-}
+
+
+/*Fim do sobre*/
+
 /* Fim sobre */
+
+/* Início Escolaridade*/
+#escolaridade{
+    background-color: lightgray;
+    height: 100vh;
+}
+
+/* Fim Escolaridade*/
+
+/* Início Aperfeiçoamento*/
+#aperfeicoamento{
+    background-color: lightsteelblue;
+    height: 100vh;
+}
+/* Fim Aperfeiçoamento*/
+#aperfeicoamento ul li{
+    width: 150px;
+    height: 150px;
+    background: #111111;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    margin: 10px;
+    text-align: center;
+}
+#aperfeicoamento h2{
+    font-size: 22px;
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+#aperfeicoamento ul li:hover{
+    background: white;
+    color: #ff9f00;
+    cursor: pointer;
+
+}
+#aperfeicoamento i{
+    font-size: 52px;
+    
+}
+/* Fim Aperfeiçoamento*/
+
+/*Início Projetos*/
+#projetos{
+    background-color: lightyellow;
+    height: 100vh;
+    text-align: center;
+}
+#projetos li:hover{
+    opacity: 0.5;
+    
+}
+#projetos img{
+    width: 200px;
+    height: 200px;
+}
+#projetos li{
+    margin: 10px;
+}
+/*Fim Projetos*/
 
 /* Fim Main */
 
