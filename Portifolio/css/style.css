@@ -45,7 +45,9 @@ table {
 /* Fim Reset */
 html{
     font-family: 'DM Sans', sans-serif;
+    scroll-behavior: smooth;
 }
+
 
 /* Início Header */
 header{
@@ -55,6 +57,7 @@ header{
     color: white;
     border-bottom: 1px solid #ff9f00;
     font-size: 1.1em;
+    position: fixed;
 }
 header a, footer a{
     color: white;
@@ -107,6 +110,9 @@ header nav{
 /* Fim Header */
 
 /*Início Main*/
+section{
+    padding-top: 93px;
+}
 
 /* Início Home */
 main .titulo{

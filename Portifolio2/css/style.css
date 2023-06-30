@@ -43,6 +43,9 @@ table {
     border-spacing: 0;
 }
 /* Fim Reset */
+html{
+    scroll-behavior: smooth;
+}
 header{
     position: fixed;
 }
