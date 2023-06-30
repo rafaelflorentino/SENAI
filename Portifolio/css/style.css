@@ -66,6 +66,7 @@ header{
     border-bottom: 1px solid #ff9f00;
     font-size: 1.1em;
     position: fixed;
+    z-index: 10000;
 }
 header a, footer a{
     color: white;
@@ -147,11 +148,11 @@ main p{
     line-height: 24px;
 }
 #home{
-     height: 100vh;
+     min-height: 100vh;
 }
 #home #home-container{
     max-width: 1045px;
-    height: 439px;
+    min-height: 439px;
     display: block;
     margin: 0 auto;
     padding: 80px 40px;
@@ -161,6 +162,7 @@ main p{
     float: left;
     display: block;
     margin-top: 80px;
+    margin-bottom: 60px;
 }
 #textoHome h1{
     font-family:cursive;
@@ -185,6 +187,7 @@ main p{
     display: block;
     background: url(../img/foto.jpg) 48% 6% no-repeat;
     border-radius: 300px;
+    margin-bottom: 60px;
 }
 
 #home  #botoes{
@@ -224,6 +227,7 @@ main p{
     /* background-color: lightsteelblue; */
     background-color: #f7f4f4;
     height: 100vh;
+    clear: both;
 }
 
 
@@ -242,7 +246,7 @@ main p{
 /* Início Aperfeiçoamento*/
 #aperfeicoamento{
     background-color: lightsteelblue;
-    height: 100vh;
+    min-height: 100vh;
 }
 /* Fim Aperfeiçoamento*/
 #aperfeicoamento ul li{
@@ -275,7 +279,7 @@ main p{
 /*Início Projetos*/
 #projetos{
     background-color: lightyellow;
-    height: 100vh;
+    min-height: 100vh;
     text-align: center;
 }
 #projetos li:hover{
@@ -333,4 +337,45 @@ footer a i{
     #mobile{
         display: block;
     }
+
+}
+
+@media (max-width: 896px){
+    #home #textoHome {
+        width: 300px;
+        min-width: 60%;
+        float: none;
+        display: block;
+        margin: 30px auto;
+        margin-bottom: 80px;
+    }
+    
+    #home #foto {
+        width: 100%;
+        min-width: 60%;
+        float: none;
+        display: block;
+        margin: 30px auto;
+        border-radius: 0px;
+
+    }
+    #home #home-container {
+        padding: 30px 40px;
+    }
+    #textoHome h1 {        
+        font-size: 35px;
+        line-height: 40px;
+    }
+    #textoHome p {
+        font-size: 20px;
+    }
+    #botoes{
+        font-size: 9px;
+    }
+    #conhecimentos{
+        text-align: center;
+    }
+    
+    
+
 }
