@@ -47,16 +47,11 @@ table {
     font-family: Poppins;
     src: url(../fonts/Poppins-Regular.ttf);
   }
-
 html{ 
     font-family: Poppins;
     scroll-behavior: smooth;
 }
-
-
 /* Início Header */
-
-
 header{
     font-family: 'DM Sans', sans-serif;
     width: 100%;
@@ -71,7 +66,6 @@ header{
 header a, footer a{
     color: white;
     text-decoration: none;
-    
 }
 header a, div, ul, li{
     display: inline-block;
@@ -95,7 +89,6 @@ header nav{
 #mobile{
     float: right;
     display: none;
-
 }
 #mobile a{
     font-size: 37px;
@@ -115,26 +108,22 @@ header nav{
 #menu ul li a:hover{
     color: #ff9f00
 }
-
 /* Fim Header */
 
 /*Início Main*/
 section{
     padding-top: 93px;
 }
-
 /* Início Home */
 main .titulo{
     text-align: center;
 }
-
 main .cont{
     max-width: 1045px;
     margin: 0px auto;
     display: block;
     padding: 30px;
 }
-
 main h1{
     color: #ff9f00;
     font-weight: bolder;
@@ -177,8 +166,7 @@ main p{
     margin-top: 5px;
     font-size: 28px;
     color: gray;
-    font-weight: lighter;
-    
+    font-weight: lighter; 
 }
 #home #foto{
     width: 400px;
@@ -189,7 +177,6 @@ main p{
     border-radius: 300px;
     margin-bottom: 60px;
 }
-
 #home  #botoes{
     margin-top: 30px;
 }
@@ -229,8 +216,6 @@ main p{
     height: 100vh;
     clear: both;
 }
-
-
 /*Fim do sobre*/
 
 /* Fim sobre */
@@ -268,7 +253,6 @@ main p{
     background: white;
     color: #ff9f00;
     cursor: pointer;
-
 }
 #aperfeicoamento i{
     font-size: 52px;
@@ -284,7 +268,6 @@ main p{
 }
 #projetos li:hover{
     opacity: 0.5;
-    
 }
 #projetos img{
     width: 200px;
@@ -375,7 +358,4 @@ footer a i{
     #conhecimentos{
         text-align: center;
     }
-    
-    
-
 }
