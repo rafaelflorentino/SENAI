@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário personalizado</title>
+    <style>
+        html {
+            background-color: #accfe5;
+            height: 100%;
+        }
+
+        #caixa {
+            width: 315px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 100px;
+            border-radius: 20px;
+            padding: 20px;
+            background: #fff;
+            font-family: 'Source Sans Pro', sans-serif;
+            color: #a83e2a;
+            font-size: 16px;
+        }
+
+        .formulario {
+            font-family: 'Roboto Slab', serif;
+            font-weight: 300;
+            font-size: 14px;
+            color: #f3e4c8;
+            border: 2px;
+            border-color: #f3e4c8;
+            border-style: solid;
+            background-color: #a83e2a;
+            border-radius: 10px;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <body>
+        <div id="caixa">
+            <form action="" method="POST">
+
+                <strong>Nome:</strong><br>
+                <input name="nome" type="text" class="formulario" size="34">
+
+                <br><br>
+
+                <strong>E-mail:</strong><br>
+                <input name="replyto" type="text" class="formulario" size="34">
+
+                <br><br>
+
+                <strong>Mensagem:</strong><br>
+                <textarea name="Comentarios" cols="34" rows="5" class="formulario"></textarea>
+
+                <br><br>
+                <center>
+                    <input name="BTEnvia" type="submit" class="formulario" value="Enviar">
+                    <input name="BTApaga" type="reset" class="formulario" value="Apagar">
+                </center>
+            </form>
+
+        </div>
+
+    </body>
+</body>
+
+</html>
