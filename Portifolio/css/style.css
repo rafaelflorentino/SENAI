@@ -236,9 +236,14 @@ main p{
     height: 400px;
     float: right; 
     display: block;
-    background: url(../img/foto.jpg) 48% 6% no-repeat;
+    background: url(../img/foto.jpg) no-repeat;
     border-radius: 300px;
     margin-bottom: 60px;
+    background-size: cover;
+    filter: brightness(95%); 
+}
+#home #foto:hover{
+    filter: grayscale(65%);
 }
 #home  #botoes{
     margin-top: 30px;
@@ -474,6 +479,28 @@ footer a i{
     #home{
         padding-top: 73px;
     }  
+
+}
+@media (min-width: 688px) and (max-width: 896px){
+    #home #foto {
+        width: 400px;
+        height: 400px;
+        float: none;
+        clear: both;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 60px;
+        border-radius: 300px;
+    }
+    #home #textoHome {
+        width: 400px;
+        float: none;
+        clear: both;
+        display: block;
+        margin-top: 80px;
+        margin: 0px auto;
+        margin-bottom: 60px;
+    }
 
 }
 
