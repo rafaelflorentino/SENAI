@@ -59,7 +59,7 @@ header{
     background: #111111; /* background: #1d1d20; */   
     color: white;
     border-bottom: 1px solid #ff9f00;
-    font-size: 1.1em;
+    font-size: 17px;
     position: fixed;
     z-index: 10000;
 }
@@ -74,7 +74,7 @@ header nav{
     max-width: 1040px;
     margin: 0 auto;
     margin: 0 auto;
-    padding: 0px 10px;
+    padding: 0px 20px;
 }
 #logo{
     width: 80px;
@@ -95,9 +95,72 @@ header nav{
     margin-top: 28px;
     margin-right: 10px;
 }
+#mobile #botao-menu-mb {
+    font-size: 37px;
+    margin-top: 28px;
+    margin-right: 10px;
+}
 #mobile a:hover i, footer a:hover{
     color: #ff9f00
 }
+
+#menu-mobile {
+    display: none; 
+    position: fixed;
+    right: 0px;
+    background-color: black;
+    width: 100%;
+    max-width: 320px;
+    height: 100%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-y: scroll; 
+}
+#menu-mobile ul li{
+    font-size: 25px;
+    width: 100%;
+}
+#menu-mobile a{
+    font-size: 23px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 20px 20px;
+    margin: 0px;
+}
+
+#menu-mobile li {
+    list-style: none;
+}
+
+#menu-mobile a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 20px 20px;
+}
+#menu-mobile i {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 20px 20px;
+}
+
+#menu-mobile a:hover {
+    color: #ff9f00;
+    background: #1c1b1b;
+
+}
+
+
+#close-mobile {
+    text-align: right;
+}
+
+#close-mobile a:hover {
+    background-color: black;
+}
+
 #menu{
     float: right;
     margin-top: 40px;
@@ -186,7 +249,6 @@ main p{
 #home #botaoCurriculo{
     color: white;
     padding: 10px 30px;
-    /* background-color: #ff9f00; */
     background-image: -webkit-linear-gradient(315deg, #ff9f00, #ffeb00);
     border-radius: 35px;
     margin-right: 25px;
@@ -232,6 +294,7 @@ main p{
 #aperfeicoamento{
     background-color: lightsteelblue;
     min-height: 100vh;
+    padding-bottom: 50px;
 }
 /* Fim Aperfeiçoamento*/
 #aperfeicoamento ul li{
@@ -276,7 +339,17 @@ main p{
 #projetos li{
     margin: 10px;
 }
+main #projetos {
+    padding-bottom: 0px;
+}
 /*Fim Projetos*/
+
+/* Início Experiência */
+#experiencia{
+    padding-bottom: 50px;
+    height: 100vh;
+}
+/* Fim Experiência */
 
 /* Fim Main */
 
@@ -313,17 +386,98 @@ footer a i{
 
 /* Responsividade */
 
-@media (max-width: 669px){
+@media (max-width: 450px){
+    #textoHome h1 {
+        font-size: 35px;
+        line-height:48px;
+    }
+    #textoHome p {
+        font-size: 24px;
+    }   
+    #home #botaoContato, #home #botaoCurriculo  {
+        font-size: 12px;
+    }     
+    #home #botaoCurriculo {
+        padding: 10px 25px;
+        margin-right: 20px;
+    } 
+    #home #botaoContato {
+        padding: 8px 15px;
+    }   
+    #menu {
+        display: none;
+    }  
+    #mobile {
+        display: block;
+    }   
+    #textoHome{
+        text-align: center;
+    }   
+    #textoHome p{
+        text-align: center;
+    } 
+
+    main .cont {
+        padding: 15px;
+    }
+    section {
+        padding-top: 25px;
+    } 
+    #home{
+        padding-top: 73px;
+    }  
+ 
+    main #home #home-container {
+        padding-bottom: 0px;
+    }  
+    footer{
+        font-size: 0.7em;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 687px){
     #menu{
         display: none;
     }
     #mobile{
         display: block;
     }
+    #textoHome h1 {        
+        font-size: 38px;
+        line-height: 45px;
+    }
+    #textoHome p {
+        font-size: 24px;
+    }
+    #conhecimentos{
+        text-align: center;
+    }
+    #textoHome{
+        text-align: center;
+    }   
+    #textoHome p{
+        text-align: center;
+    } 
+    #home #botaoContato, #home #botaoCurriculo  {
+        font-size: 12px;
+    }     
+    #home #botaoCurriculo {
+        padding: 10px 25px;
+        margin-right: 20px;
+    } 
+    #home #botaoContato {
+        padding: 8px 15px;
+    }  
+    section {
+        padding-top: 30px;
+    }
+    #home{
+        padding-top: 73px;
+    }  
 
 }
 
-@media (max-width: 896px){
+@media (max-width: 688px){
     #home #textoHome {
         width: 300px;
         min-width: 60%;
@@ -338,24 +492,13 @@ footer a i{
         min-width: 60%;
         float: none;
         display: block;
-        margin: 30px auto;
+        margin: 0px auto;
         border-radius: 0px;
+        background-size: contain;
 
     }
     #home #home-container {
         padding: 30px 40px;
     }
-    #textoHome h1 {        
-        font-size: 35px;
-        line-height: 40px;
-    }
-    #textoHome p {
-        font-size: 20px;
-    }
-    #botoes{
-        font-size: 9px;
-    }
-    #conhecimentos{
-        text-align: center;
-    }
+
 }
