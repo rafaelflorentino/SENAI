@@ -240,7 +240,7 @@ main p{
     border-radius: 300px;
     margin-bottom: 60px;
     background-size: cover;
-    filter: brightness(95%); 
+    filter: brightness(96%); 
 }
 #home #foto:hover{
     filter: grayscale(65%);
