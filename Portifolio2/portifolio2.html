@@ -10,7 +10,7 @@
     <title>Portifolio</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <nav>
             <a href="#" id="logo">logo</a>
 
@@ -26,14 +26,40 @@
             </div>
 
             <div id="mobile">
-                <a href="#"><i class="fa-solid fa-bars"></i></a>
+                <div id="menu-mobile">
+                    <ul>
+                        <li id="close-mobile"><i id="btn-close-mb"class="fa-solid fa-x"></i></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#escolaridade">Escolaridade</a></li>
+                        <li><a href="#aperfeicoamento">Aperfeiçoamento</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#experiencia">Experiência</a></li>
+                        <li><a href="https://www.linkedin.com/in/rafael-florentino-617910150" target="_blank">Linkedin</a></li>
+                        <li><a href="https://www.instagram.com/rafaelflorentinobarbosa/" target="_blank">Instagram</a></li>
+                        <li><a href="https://github.com/rafaelflorentinobarbosa" target="_blank">GitHub</a></li>
+                        <li><a href="mailto:rafael.florentino.barbosa@gmail.com">E-mail</a></li>
+                    </ul>
+                </div>
+                <i id="botao-menu-mb" class="fa-solid fa-bars"></i>
             </div>
         </nav>
     </header>
 
     <main>
         <section id="home">
-            <div class="container"></div>
+            <div id="container-home" class="container">
+                <div id="info">
+                    <h1>Olá, eu sou</h1>
+                    <h2>RAFAEL <span class="amarelo">FLORENTINO</span></h2>
+                    <h3>Front End Developer</h3>
+    
+                    <p>Desenvolvimento Web - Programação de sites responsivos, e dinâmicos, Landing Pages, Lojas Virtuais,
+                    e Montagem de Email-Marketing. Para saber mais <a class="amarelo" href="#">entre em contato.</a></p>
+                    
+                    <p class="redes"><a href="#"><i class="fa-brands fa-github"></i> GitHub</a>  <a href="#"><i class="fa-brands fa-linkedin"></i> Linkedin</a>  <a href=""><i class="fa-brands fa-square-instagram" ></i>  Instagram</a></p>      
+                </div>
+            </div>
         </section>
         <section id="sobre">
             <div class="container">
@@ -163,5 +189,45 @@
     </footer>
 
 </body>
+<script>
+
+/* Mudar a cor do menu quando scrollar*/
+
+    // Obter a referência para o elemento que queremos animar
+    const header = document.getElementById('header');
+
+    // Função para ser executada quando ocorrer o evento scroll
+    function handleScroll() {
+        // Obtém a posição vertical do scroll
+        const scrollTop = window.scrollY;
+        
+        if (scrollTop > 100) {
+            header.style.background = "black";
+        } else {
+            header.style.background = "rgb(223 223 223 / 30%)";
+        }
+    }
+    // Adiciona o ouvinte de evento 'scroll' ao objeto window
+    window.addEventListener('scroll', handleScroll);
+
+
+/* Abrir e Fechar mennu Mobile*/
+
+    window.onload = function () {
+        /* Abrir Menu mobile*/
+            let btnMenu = document.getElementById("botao-menu-mb");
+                btnMenu.onclick = function () {
+                    menu.style.display = "block";
+                };
+        /* Fechar Menu mobile*/
+            let btnFechar = document.getElementById("btn-close-mb");
+            let menu = document.getElementById("menu-mobile");
+
+            btnFechar.onclick = function () {
+                menu.style.display = "none";
+            };
+        }
+
+</script>
 </html>
 
