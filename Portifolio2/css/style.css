@@ -59,9 +59,10 @@ header{
 header{
     width: 100%;
     padding: 10px 0px;
-    background: rgb(223 223 223 / 30%); 
+    /* background: rgb(223 223 223 / 30%); 
     box-shadow: 0px 0px 33px #00000059; 
-    border-bottom: 1px solid #ff9f009e;   
+    border-bottom: 1px solid #ff9f009e;    */
+    z-index: 10000;
 }
 header nav{
     max-width: 1000px;
@@ -164,7 +165,7 @@ header a:hover{
     display: none;
     font-size: 37px;
     margin-top: 20px;
-    margin-right: 10px;
+    margin-right: 15px;
     color: #ff9f00;
     float: right;
 }
@@ -199,9 +200,26 @@ header a:hover{
      border-right: 3px solid lightgray; 
 }
     
-
-
 /*Fim Header*/
+
+/* Início main*/
+main h1 {
+    color: #ff9f00;
+    font-weight: bolder;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+main p {
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 15px;
+    line-height: 24px;
+}
+.container{
+    max-width: 950px;
+    margin: 0 auto;
+}
 
 /* Início Home*/
 #home{
@@ -213,11 +231,9 @@ header a:hover{
 #home #container-home{
     max-width: 1450px;
     margin: 0 auto;
-    /* height: 703px; */
     height: 50vh;
     background: url('../img/Desktop.jpg') lightgray  no-repeat center;
     background-attachment: fixed !important;
-    /* background-repeat: no-repeat; */
     background-size: cover;
     margin: 0 auto;
     padding: 170px 40px;
@@ -278,47 +294,66 @@ header a:hover{
 .amarelo{
     color: #ff9f00;
 }
-/* #home:before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: rgba(41, 41, 41, 0.75);
-} */
 
 /* Fim Home */
 
 /* Início Sobre*/
-main h1 {
-    color: #ff9f00;
-    font-weight: bolder;
-    font-size: 23px;
-    margin-bottom: 15px;
-}
-
-main p {
-    font-size: 18px;
-    text-align: justify;
-    margin-bottom: 15px;
-    line-height: 24px;
-}
-/* Fim Sobre*/
-
-.container{
-    max-width: 950px;
-    margin: 0 auto;
-}
 #sobre{
     background-color: lightgray;
+    height: auto;
+    padding: 93px 20px 70px 20px;
+}
+#sobre #foto{
+    max-width: 380px;
+    margin: 0 auto;
+    margin-top: 30px;
+    text-align: center;
+}
+#sobre #foto img{
+    width: 100%;
+}
+#sobre #foto img:hover{
+    filter: brightness(80%);
 }
 
+
+/* Fim Sobre*/
+
+/* Inicio Escolaridade*/
+
 #escolaridade{
+    position: relative;
     background-color: lightblue;
+    padding: 93px 20px 40px 20px;
+    /* height: 80vh; */
+    background: url('../img/Amsterdã.jpeg')  no-repeat;
+    /* background-position: 0% 0%; */
+    background-position-y: -22%;
+    box-shadow: inset 0 0 0 100vw rgba(41, 41, 41, 0.75);
+    background-attachment: fixed !important;
+    background-size: cover;  
+   
 }
+#escolaridade p{
+    color: white;
+}
+#cursos{
+    margin-top: 40px;
+    font-size: 20px;
+}
+#cursos p{
+    margin-bottom: 20px;
+}
+#cursos i{
+    font-size: 30px;
+    color: #ff9f00;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+/* Fim escolaridade*/
 #aperfeicoamento{
-    background-color: lightgreen;
+    background-color: #f7f4f4;
 }
 #projetos{
     background-color: lightsalmon;
@@ -336,6 +371,52 @@ footer a{
 }
 
 /* Resposividade*/
+
+@media (max-width: 450px){
+    header {
+        background: black;
+    }   
+    #home #container-home {
+        background-size: auto;
+        background-position: 57% 15%;
+    } 
+    #home #container-home {
+        padding: 90px 10px;
+    }
+    #info p{
+        text-align: center;
+    }
+    #info{
+        text-align: center;
+    }
+    #info h2{
+        font-size: 40px;
+    }
+    #info h1 {
+        max-width: 100%;
+        padding-top: 20px;
+    }
+    #info h3 {
+        max-width: 100%;
+    }    
+    #info .redes {
+        max-width: 331px;
+        font-size: 16px;
+        padding-bottom: 20px;
+    }
+    #sobre{
+        height: auto;
+        padding: 40px 20px 60px 20px;
+    }
+    #sobre #foto {
+        margin-top: 25px;
+    }
+    #escolaridade {
+        background-position: 40% 0%;
+        padding: 40px 20px 40px 20px;
+    }
+    
+}
 
 @media (max-width: 715px){
     #menu{

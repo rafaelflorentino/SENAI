@@ -70,17 +70,28 @@
                 <p> Atualmente sou Freelancer como Frontend Developer e UI Designer. Desenvolvo interfaces modernas e de alta qualidade, concentrado em 
                     performance, animações, responsividade.</p>
                     
-                </p> Meu principal foco e oferecer aos clientes as melhores e inovadoras soluções.</p>
+                <p> Meu principal foco e oferecer aos clientes as melhores e inovadoras soluções.</p>
+                <div id="foto">
+                    <img id="foto" src="img/fotoCirculoMini.png" alt="Foto Rafael" draggable = false>
+                </div>
             </div>
         </section>
         <section id="escolaridade">
             <div class="container">
-                <h1>Escolaridade</h1>
-                <p>Sou Bacharel, formado na Universidade Católica de Brasília(UCB), desde 2017.</p>
+                <h1>ESCOLARIDADE</h1> <!-- <i class="fa-solid fa-landmark"></i> -->
 
-                <p>Possuo curso têcnico de Programador Web na Escola tecnica de Ceilândia(ETC).</p>
+                <div id="cursos">
+                    <p><i class="fa-solid fa-graduation-cap"> </i> Sou Bacharel, formado na Universidade Católica de Brasília(UCB), desde 2017.</p>
+                    <p><i class="fa-solid fa-laptop-code"></i> Possuo curso têcnico de Programador Front-End no SENAI-Taguatinga.</p>
+                    <p><i class="fa-solid fa-laptop"></i> Possuo curso têcnico de Programador Web na Escola tecnica de Ceilândia(ETC).</p>
+                    <p><i class="fa-solid fa-code"></i> Possuo Curso de Programador Web Moderno pela Udemy 2022.</p>
+                    <p><i class="fa-solid fa-desktop"></i> Possuo curso de Informática Avançado pela MicroPlug Informática.</p>
+                    <p><i class="fa-brands fa-js"></i> Possuo curso de JavaScript Básico pela Udacity.</p>
+                    <p><i class="fa-solid fa-book"></i> Possuo curso de Inglês Intermediário.</p>
+                    <p><i class="fa-solid fa-scroll"> </i> Possuo curso de Alemão Básico.</p>
+                    <p><i class="fa-solid fa-language"></i> Possuo curso de Espanhol Básico.</p>
                     
-                <p>Possuo curso têcnico de Programador Front-End no SENAI-Taguatinga.</p>
+                </div>
             </div>
         </section>
         <section id="aperfeicoamento">
@@ -203,8 +214,10 @@
         
         if (scrollTop > 100) {
             header.style.background = "black";
+            header.style.borderBottom = "1px solid #ff9f00";
         } else {
-            header.style.background = "rgb(223 223 223 / 30%)";
+            header.style.background = "none";
+            header.style.borderBottom = "none";
         }
     }
     // Adiciona o ouvinte de evento 'scroll' ao objeto window
