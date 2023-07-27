@@ -85,7 +85,7 @@ header a:hover{
     margin-right: 15px; 
 }
 #menu ul li a{
-    text-shadow: 0.1em 0.1em 0.4em black;
+    text-shadow: 0.1em 0.1em 0.4em #111;
 }
 
 #logo{
@@ -97,8 +97,11 @@ header a:hover{
     background-repeat: no-repeat;
     background-size: contain;
     text-align: center;
-    color: transparent; 
-    
+    color: transparent;  
+}
+#logo:hover{
+    /* opacity: 0.7; */
+    filter: brightness(85%);
 }
 #menu{
     padding-top: 25px;
@@ -110,7 +113,7 @@ header a:hover{
     position: fixed;
     right: 0px;
     top: 0px;
-    background-color: black;
+    background-color: #111;
     width: 100%;
     max-width: 320px;
     height: 100%;
@@ -157,7 +160,7 @@ header a:hover{
 }
 
 #close-mobile i:hover {
-    background-color: black;
+    background-color: #111;
     color: #ff9f00;
 }
 
@@ -217,13 +220,13 @@ main p {
     line-height: 24px;
 }
 .container{
-    max-width: 950px;
-    margin: 0 auto;
+    max-width: 1045px;
+    margin: 0px auto;
+    display: block;
 }
 
 /* Início Home*/
 #home{
-    /* background-color: red; */
     background:lightgray;
     
 
@@ -323,11 +326,8 @@ main p {
 
 #escolaridade{
     position: relative;
-    background-color: lightblue;
     padding: 93px 20px 40px 20px;
-    /* height: 80vh; */
-    background: url('../img/Amsterdã.jpeg')  no-repeat;
-    /* background-position: 0% 0%; */
+    background: url('../img/Amsterdã.jpeg') lightblue no-repeat;
     background-position-y: -22%;
     box-shadow: inset 0 0 0 100vw rgba(41, 41, 41, 0.75);
     background-attachment: fixed !important;
@@ -352,15 +352,120 @@ main p {
 }
 
 /* Fim escolaridade*/
+
+/* Início Aperfeiçoamento*/
+
 #aperfeicoamento{
     background-color: #f7f4f4;
+    min-height: 100vh;
+    padding: 93px 20px 40px 20px;
 }
+#aperfeicoamento ul li{
+    width: 150px;
+    height: 150px;
+    background: #111111;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    margin: 10px;
+    display: inline-block;
+}
+#aperfeicoamento h2{
+    font-size: 22px;
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+#aperfeicoamento ul li:hover{
+    background: white;
+    color: #ff9f00;
+    cursor: pointer;
+}
+#aperfeicoamento i{
+    font-size: 52px;
+}
+#aperfeicoamento #conhecimentos{
+    text-align: center;
+}
+
+/* Fim Aperfeiçoamento*/
+
+/* Início Projetos*/
+
 #projetos{
-    background-color: lightsalmon;
+    background-color: lightgray;
+    min-height: 100vh;
+    text-align: center;
+    padding: 93px 20px 0px 20px;
 }
+#projetos ul li{
+    display: inline-block;
+    margin: 10px;
+}
+
+#projetos #botao{
+    width: 190px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 30px;
+    text-decoration: none;
+    color: white; 
+}
+
+#projetos #botao a{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    background: #ff9f00;
+    border-radius: 30px;
+    font-size: 18px;
+}
+#projetos #botao a:hover{
+    filter: brightness(90%);
+}
+
+
+/* Fim Projetos*/
+
+/* Início Experiência*/
+
+
 #experiencia{
-    background-color: lightcoral;
+    background-color: #f7f4f4;
+    min-height: 80vh;
+    text-align: center;
+    padding: 93px 20px 0px 20px;
 }
+#experiencia i {
+    font-size: 25px;
+    color: #ff9f00;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+#experiencia p {
+    margin-bottom: 20px;
+}
+#experiencia  #redes{
+    margin-top: 70px;
+    padding-bottom: 35px;
+}
+#experiencia  #redes h1{
+    padding-bottom: 20px;
+}
+#experiencia  #redes li{
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-right: 15px;
+}
+#experiencia  #redes a{
+    color: black;
+    text-decoration: none;
+}
+#experiencia  #redes a:hover{
+    color: #ff9f00;
+    text-decoration: line-through;
+}
+
+/* Fim Experiência*/
 #seta{
     display: none;
     width: 50px;
@@ -382,22 +487,36 @@ main p {
     border-radius: 26px;
     text-decoration: none;
 }
+#seta a:hover{
+    filter: brightness(90%);
+}
 
 /* Início Footer */
-footer{
-    color:white;
-    background-color: #111111;
+
+footer {
+    width: 100%;
+    height: 70px;
+    background: #111111;
+    color: white;
+    border-top: 1px solid #ff9f00;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.1em;
+    text-align: center;
 }
-footer a{
-    color:white;
-    text-decoration: none;
+
+footer p{
+    font-size: 20px;
+    margin-top: 25px;
+    
 }
+
+/* Fim Footer */
 
 /* Resposividade*/
 
 @media (max-width: 450px){
     header {
-        background: black;
+        background: #111;
     }   
     #home #container-home {
         background-size: auto;
@@ -441,7 +560,15 @@ footer a{
     #seta a{
         display: none;
     }
-    
+    #aperfeicoamento {
+        padding: 40px 0px 40px 0px
+    }
+    #aperfeicoamento .container {
+        padding: 15px;
+    }
+    #projetos {
+        padding: 93px 20px 50px 20px;
+    }
 }
 
 @media (max-width: 715px){
@@ -454,5 +581,8 @@ footer a{
     }
     #info h2{
         line-height: 1;
+    }
+    #projetos {
+        padding: 93px 20px 50px 20px;
     }
 }
