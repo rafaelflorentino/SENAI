@@ -12,7 +12,7 @@
 <body>
     <header id="header">
         <nav>
-            <a href="#" id="logo">logo</a>
+            <a href="#" id="logo"></a>
 
             <div id="menu">
                 <ul>
@@ -52,7 +52,7 @@
                 <div id="info">
                     <h1>Olá, eu sou</h1>
                     <h2>RAFAEL <span class="amarelo">FLORENTINO</span></h2>
-                    <h3>Front End Developer</h3>
+                    <h3>Front End Developer <span>|</span></h3>
     
                     <p>Desenvolvimento Web - Programação de sites responsivos, e dinâmicos, Landing Pages, Lojas Virtuais,
                     e Montagem de Email-Marketing. Para saber mais <a class="amarelo" href="#">entre em contato.</a></p>
@@ -72,7 +72,9 @@
                     
                 <p> Meu principal foco e oferecer aos clientes as melhores e inovadoras soluções.</p>
                 <div id="foto">
-                    <img id="foto" src="img/fotoCirculoMini.png" alt="Foto Rafael" draggable = false>
+                    <a href="https://github.com/rafaelflorentinobarbosa" target="_blank">
+                        <img id="foto" src="img/fotoCirculoMini.png" alt="Foto Rafael" draggable = false>
+                    </a>
                 </div>
             </div>
         </section>
@@ -232,7 +234,7 @@
         const scrollTop = window.scrollY;
         
         if (scrollTop > 100) {
-            header.style.background = "black";
+            header.style.background = "#111";
             header.style.borderBottom = "1px solid #ff9f00";
         } else {
             header.style.background = "none";

@@ -113,7 +113,7 @@ header a:hover{
     position: fixed;
     right: 0px;
     top: 0px;
-    background-color: #111;
+    background-color: black;
     width: 100%;
     max-width: 320px;
     height: 100%;
@@ -270,7 +270,7 @@ main p {
     font-weight: 400;
     font-family: Montserrat, sans-serif;
     font-size: 1.75rem;
-    max-width: 260px;
+    max-width: 280px;
 
 }
 #info p{
@@ -356,7 +356,8 @@ main p {
 /* Início Aperfeiçoamento*/
 
 #aperfeicoamento{
-    background-color: #f7f4f4;
+    /* background-color: #f7f4f4; */
+    background-color: lightgray;
     min-height: 100vh;
     padding: 93px 20px 40px 20px;
 }
@@ -392,7 +393,13 @@ main p {
 /* Início Projetos*/
 
 #projetos{
-    background-color: lightgray;
+    /* background-color: lightgray; */
+    position: relative;
+    background: url(../img/cup-of-coffee.jpg) lightblue no-repeat;
+    background-position-y: -22%;
+    box-shadow: inset 0 0 0 100vw rgba(41, 41, 41, 0.75);
+    background-attachment: fixed !important;
+    background-size: cover;
     min-height: 100vh;
     text-align: center;
     padding: 93px 20px 0px 20px;
@@ -423,6 +430,15 @@ main p {
     filter: brightness(90%);
 }
 
+#projetos img{
+    /* border: 2px solid black; */
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+#projetos img:hover{
+    border: 2px solid #ff9f00;
+}
+
 
 /* Fim Projetos*/
 
@@ -430,7 +446,8 @@ main p {
 
 
 #experiencia{
-    background-color: #f7f4f4;
+    background-color: #b1b0ae;
+    background-color: lightgray;
     min-height: 80vh;
     text-align: center;
     padding: 93px 20px 0px 20px;
@@ -491,8 +508,8 @@ main p {
     filter: brightness(90%);
 }
 
-/* Início Footer */
 
+/* Início Footer */
 footer {
     width: 100%;
     height: 70px;
@@ -512,11 +529,108 @@ footer p{
 
 /* Fim Footer */
 
+/* Animaçoes*/
+
+
+/* Fazer cursos entrarem pela esquerda*/
+
+/* html{
+    overflow-x: hidden;
+}
+#cursos p {
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+   
+  }
+  
+  @keyframes example {
+    0%   { left:-200px;}
+    25%  { left:100px;}
+    50%  { left:0px;}
+   
+  } */
+
+
+/* Fazer seta ficar mudando de cor */
+#seta a {
+    animation-name: seta;
+    animation-timing-function: linear;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes seta {
+    0%   {background-color: #d18302;}
+    25%  {background-color: #ff9f00;}
+    50%  {background-color: gray;}
+    75%  {background-color: d18302;}
+    100% {background-color: #ff9f00;}
+  }
+
+/* Experiência ir para direita*/
+
+/* #experiencia p:hover{
+    transform: translate(200px,0px);
+} */
+
+/* Fazer imagem crescer e diminuir*/
+
+#foto{
+    transition: 1s;
+}
+#foto:hover{
+    transform: scale(1.1,1.1);
+}
+
+/* Fazer botão crescer e diminuir*/
+#botao{
+    transition: 1s;
+}
+#botao:hover{
+    transform: scale(1.1,1.1);
+}
+
+/* Fazer seta crescer e diminuir*/
+#seta{
+    transition: 1s;
+}
+#seta:hover{
+    transform: scale(1.1,1.1);
+}
+
+/* Fazer logo crescer e diminuir*/
+#logo{
+    transition: 1s;
+}
+#logo:hover{
+    transform: scale(1.1,1.1);
+}
+
+/* Fazer Projetos crescer e diminuir*/
+#projetos img{
+    transition: 0.5s;
+}
+#projetos img:hover{
+    transform: scale(1.1,1.1);
+}
+
+/* Fazer Conhecimentos girar*/
+#conhecimentos li{
+    transition: width 2s, height 2s, transform 2s;
+}
+#conhecimentos li:hover{
+    transform: rotate(360deg);
+}
+
+
+/* Fim Experiência ir para direita */
+
 /* Resposividade*/
 
 @media (max-width: 450px){
     header {
-        background: #111;
+        box-shadow: inset 0 0 0 100vw rgba(41, 41, 41, 0.99);
     }   
     #home #container-home {
         background-size: auto;
@@ -586,3 +700,39 @@ footer p{
         padding: 93px 20px 50px 20px;
     }
 }
+
+/* Digitar texto automaticamente */
+
+#info h3{
+    white-space: nowrap; 
+    overflow: hidden;
+    width: 30em;
+    animation: type 5s steps(60, end); 
+  }
+
+  #info h3 a{
+    text-decoration: none;
+  }
+  
+  #info h3 span{
+    animation: blink 1s infinite;
+  }
+    
+  @keyframes type{ 
+    from { width: 0; } 
+  } 
+  @keyframes blink{
+    to{opacity: .0;}
+  }
+  
+  /* ::selection{
+    background: black;
+  } */
+
+  /*entrar pela esquerda*/
+  /* #home .container #info {
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateX(-40rem);
+    transform: translateX(0rem);
+  } */
