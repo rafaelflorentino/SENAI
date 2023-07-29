@@ -725,11 +725,7 @@ footer p{
     to{opacity: .0;}
   }
   
-  /* ::selection{
-    background: black;
-  } */
-
-  /*entrar pela esquerda*/
+  /* Entrar pela esquerda */
   /* #home .container #info {
     opacity: 0;
     transition: 0.5s;
