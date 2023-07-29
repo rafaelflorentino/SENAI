@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/favicon2.ico" />
+    <link rel="shortcut icon" href="img/favicon.png" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
-    <title>Portifolio</title>
+    <title>Portfólio</title>
 </head>
 <body>
     <header id="header">
@@ -80,7 +80,7 @@
         </section>
         <section id="escolaridade">
             <div class="container">
-                <h1>ESCOLARIDADE</h1> <!-- <i class="fa-solid fa-landmark"></i> -->
+                <h1>ESCOLARIDADE</h1>
 
                 <div id="cursos">
                     <p><i class="fa-solid fa-graduation-cap"> </i> Sou Bacharel, formado na Universidade Católica de Brasília(UCB), desde 2017.</p>
@@ -211,63 +211,9 @@
 
     <footer>
         <p>© 2023 - Todos os direitos reservados</p>
-        <!-- <ul id="redes">
-            <li><a href="#"><i class="fa-brands fa-linkedin"></i> Linkedin</a></li>
-            <li><a href="#"><i class="fa-brands fa-square-instagram"></i> Instagram</a></li>
-            <li><a href="#"><i class="fa-brands fa-github"></i> GitHub</a></li>
-            <li><a href="#"><i class="fa-solid fa-envelope"></i> E-mail</a></li>
-        </ul> -->
     </footer>
 
 </body>
-<script>
-
-/* Mudar a cor do menu quando scrollar*/
-
-    // Obter a referência para o elemento que queremos animar
-    const header = document.getElementById('header');
-    const seta = document.getElementById('seta');
-
-    // Função para ser executada quando ocorrer o evento scroll
-    function handleScroll() {
-        // Obtém a posição vertical do scroll
-        const scrollTop = window.scrollY;
-        
-        if (scrollTop > 100) {
-            header.style.background = "#111";
-            header.style.borderBottom = "1px solid #ff9f00";
-        } else {
-            header.style.background = "none";
-            header.style.borderBottom = "none";    
-        }
-        // Botão de subir aparecer e desaparecer com scroll
-        if (scrollTop > 560) {
-            seta.style.display = "block";
-        }else{
-            seta.style.display = "none";
-        }
-    }
-    // Adiciona o ouvinte de evento 'scroll' ao objeto window
-    window.addEventListener('scroll', handleScroll);
-
-
-/* Abrir e Fechar mennu Mobile*/
-
-    window.onload = function () {
-        /* Abrir Menu mobile*/
-            let btnMenu = document.getElementById("botao-menu-mb");
-                btnMenu.onclick = function () {
-                    menu.style.display = "block";
-                };
-        /* Fechar Menu mobile*/
-            let btnFechar = document.getElementById("btn-close-mb");
-            let menu = document.getElementById("menu-mobile");
-
-            btnFechar.onclick = function () {
-                menu.style.display = "none";
-            };
-        }
-
-</script>
+<script src="js/script.js"></script>
 </html>
 
