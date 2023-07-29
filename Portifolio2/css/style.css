@@ -623,8 +623,46 @@ footer p{
     transform: rotate(360deg);
 }
 
+/* Fazer Redes girar*/
+#redes ul li a i{
+    transition: width 1s, height 1s, transform 1s;
+}
+#redes ul li a:hover i{
+    transform: rotate(360deg);
+}
 
-/* Fim Experiência ir para direita */
+
+/* Digitar texto automaticamente */
+
+#info h3{
+    white-space: nowrap; 
+    overflow: hidden;
+    width: 30em;
+    animation: type 5s steps(60, end); 
+  }
+
+  #info h3 a{
+    text-decoration: none;
+  }
+  
+  #info h3 span{
+    animation: blink 1s infinite;
+  }
+    
+  @keyframes type{ 
+    from { width: 0; } 
+  } 
+  @keyframes blink{
+    to{opacity: .0;}
+  }
+  
+  /* Entrar pela esquerda */
+  /* #home .container #info {
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateX(-40rem);
+    transform: translateX(0rem);
+  } */
 
 /* Resposividade*/
 
@@ -701,34 +739,3 @@ footer p{
     }
 }
 
-/* Digitar texto automaticamente */
-
-#info h3{
-    white-space: nowrap; 
-    overflow: hidden;
-    width: 30em;
-    animation: type 5s steps(60, end); 
-  }
-
-  #info h3 a{
-    text-decoration: none;
-  }
-  
-  #info h3 span{
-    animation: blink 1s infinite;
-  }
-    
-  @keyframes type{ 
-    from { width: 0; } 
-  } 
-  @keyframes blink{
-    to{opacity: .0;}
-  }
-  
-  /* Entrar pela esquerda */
-  /* #home .container #info {
-    opacity: 0;
-    transition: 0.5s;
-    transform: translateX(-40rem);
-    transform: translateX(0rem);
-  } */
