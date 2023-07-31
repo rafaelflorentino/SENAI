@@ -160,7 +160,7 @@ header a:hover{
 }
 
 #close-mobile i:hover {
-    background-color: #111;
+    background-color: inherit;
     color: #ff9f00;
 }
 
