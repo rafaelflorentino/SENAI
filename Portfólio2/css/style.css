@@ -271,21 +271,20 @@ main p {
     font-family: Montserrat, sans-serif;
     font-size: 1.75rem;
     max-width: 280px;
-
 }
 #info p{
     color: lightgrey;
     max-width: 550px;
 }
-#info .redes {
+#info .redes-home {
     max-width: 331px;
 }
-.redes a{
+.redes-home a{
     color: white;
     text-decoration: none;
     margin-right: 10px;
 }
-.redes a:hover{
+.redes-home a:hover{
     color: #ff9f00;
 }
  #info h1, #info h2, #info h3, #info p{
@@ -671,8 +670,9 @@ footer p{
         box-shadow: inset 0 0 0 100vw rgba(41, 41, 41, 0.99);
     }   
     #home #container-home {
-        background-size: auto;
-        background-position: 57% 15%;
+        background: url('../img/Desktop-Mini.jpg') lightgray  no-repeat center;
+        /* background-size: auto;
+        background-position: 57% 15%; */
     } 
     #home #container-home {
         padding: 90px 10px;
@@ -691,36 +691,44 @@ footer p{
         padding-top: 20px;
     }
     #info h3 {
-        max-width: 100%;
+        /* width: initial; */
+        max-width: 96.39%;
+        
     }    
-    #info .redes {
+    #info .redes-home {
         max-width: 331px;
         font-size: 16px;
         padding-bottom: 20px;
     }
     #sobre{
         height: auto;
-        padding: 40px 20px 60px 20px;
+        padding: 93px 20px 60px 20px;
     }
     #sobre #foto {
         margin-top: 25px;
     }
     #escolaridade {
-        background-position: 40% 0%;
-        padding: 40px 20px 40px 20px;
+        background: url('../img/Amsterdã-Mini.jpg') lightgray  no-repeat center;
+        /* background-position: 40% 0%;
+        padding: 93px 20px 40px 20px; */
     }
     #seta a{
         display: none;
     }
     #aperfeicoamento {
-        padding: 40px 0px 40px 0px
+        padding: 93px 0px 40px 0px
     }
     #aperfeicoamento .container {
         padding: 15px;
     }
     #projetos {
+        background: url('../img/cup-of-coffee-Mini.jpg') lightgray no-repeat cover;
         padding: 93px 20px 50px 20px;
     }
+    #experiencia #redes li{
+        margin-bottom: 10px;
+        margin-right: 8px;
+    }    
     footer p {
         font-size: 19px;
         margin: 15px auto;
