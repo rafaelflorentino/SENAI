@@ -55,6 +55,7 @@ html{
 /* Início Header*/
 header{
     position: fixed;
+    
 }
 header{
     width: 100%;
@@ -109,7 +110,10 @@ header a:hover{
 /* Menu Mobile */
 
 #menu-mobile {
-    display: none; 
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateX(40rem);
+    /* display: none;  */
     position: fixed;
     right: 0px;
     top: 0px;
@@ -667,7 +671,8 @@ footer p{
 
 @media (max-width: 450px){
     header {
-        box-shadow: inset 0 0 0 100vw rgba(41, 41, 41, 0.99);
+         box-shadow: inset 0 0 0 100vw rgba(41, 41, 41, 1); 
+        
     }   
     #home #container-home {
         background: url('../img/Desktop-Mini.jpg') lightgray  no-repeat center;
@@ -677,6 +682,13 @@ footer p{
     #home #container-home {
         padding: 90px 10px;
     }
+    #logo {
+        width: 57px;
+        height: 55px;
+    }   
+    #botao-menu-mb {
+        margin-top: 10px;
+    }     
     #info p{
         text-align: center;
     }
@@ -692,7 +704,7 @@ footer p{
     }
     #info h3 {
         /* width: initial; */
-        max-width: 96.39%;
+        max-width: 96.389%;
         
     }    
     #info .redes-home {
@@ -702,7 +714,7 @@ footer p{
     }
     #sobre{
         height: auto;
-        padding: 93px 20px 60px 20px;
+        padding: 75px 20px 60px 20px;
     }
     #sobre #foto {
         margin-top: 25px;
@@ -711,19 +723,20 @@ footer p{
         background: url('../img/Amsterdã-Mini.jpg') lightgray  no-repeat center;
         /* background-position: 40% 0%;
         padding: 93px 20px 40px 20px; */
+        padding: 75px 20px 40px 20px;
     }
     #seta a{
         display: none;
     }
     #aperfeicoamento {
-        padding: 93px 0px 40px 0px
+        padding: 65px 0px 40px 0px
     }
     #aperfeicoamento .container {
         padding: 15px;
     }
     #projetos {
         background: url('../img/cup-of-coffee-Mini.jpg') lightgray no-repeat cover;
-        padding: 93px 20px 50px 20px;
+        padding: 75px 20px 50px 20px;
     }
     #experiencia #redes li{
         margin-bottom: 10px;
@@ -747,7 +760,7 @@ footer p{
         line-height: 1;
     }
     #projetos {
-        padding: 93px 20px 50px 20px;
+        padding: 75px 20px 50px 20px;
     }
 }
 
