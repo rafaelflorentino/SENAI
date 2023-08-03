@@ -13,5 +13,109 @@ abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
 table{border-collapse:collapse;border-spacing:0}
 hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
 input,select{vertical-align:middle}
+*{box-sizing: border-box;}
 
-/*  Fim Css */
+/*  Fim Reset Css */
+
+/* Barra de rolagem */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #D5D5D5 #FFFFFF
+}
+
+*::-webkit-scrollbar {
+    width: 12px
+}
+
+*::-webkit-scrollbar-track {
+    background: #FFFFFF
+}
+
+*::-webkit-scrollbar-thumb {
+    background: #D5D5D5;
+    border-radius: 1rem;
+    border: 4px #FFFFFF solid
+}
+
+/* fim varra de Rolagem */
+
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins-Regular.ttf);
+  }
+html{
+    font-family: Poppins;
+    scroll-behavior: smooth;
+    background: #e7f0f7;
+    background: #175ea8;
+    background: #1d5da2;
+    background: #00a1e4;
+    background: #eeeeee;
+    background: #eb6852;
+    background: #bde386;
+    background: #effbff;
+    background: #ffe7b2;
+    background: #feeed2;
+    background: whitesmoke;
+    background: #371669;
+    background: #4e2096;
+    background: #f3eee8;
+    background: #74cb90;
+    background: #cce9fd;
+    background: white;
+    
+}
+/* Header */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #00a1e4;
+    padding: 15px 15px;   
+}
+
+header #logo{
+    display: block;
+    width: 140px;
+    height: 49px;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+header #logo:hover{
+    opacity: 0.9;
+}
+
+header .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+header #menu{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+header #menu ul {
+     display: flex; 
+}
+
+header nav #menu li{
+    margin-left: 10px;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+    transition: all 0.3s ease 0s;
+}
+header a:hover{
+    color: #1d5da2;
+}
