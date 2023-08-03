@@ -232,8 +232,6 @@ main p {
 /* Início Home*/
 #home{
     background:lightgray;
-    
-
 }
 #home #container-home{
     max-width: 1450px;
@@ -243,11 +241,9 @@ main p {
     background-attachment: fixed !important;
     background-size: cover;
     margin: 0 auto;
-    padding: 170px 40px;
+    padding: 170px 40px;  
 }
 #info{
-    /* background: rgb(211 211 211 / 80%); */
-    /* box-shadow: 0px 0px 33px #000000b0; */
     padding: 15px;
     border-radius: 10px; 
     font-stretch: ultra-expanded; 
@@ -292,7 +288,6 @@ main p {
     color: #ff9f00;
 }
  #info h1, #info h2, #info h3, #info p{
-    /* background: #02020257; */
     background: #65645f8f;
     padding: 6px;
     margin-bottom: 0px;
@@ -321,7 +316,6 @@ main p {
 #sobre #foto img:hover{
     filter: brightness(80%);
 }
-
 
 /* Fim Sobre*/
 
@@ -748,6 +742,12 @@ footer p{
     }
 }
 
+@media screen and (min-width: 451px) and (max-width: 714px){
+    #home #container-home {
+        padding: 100px 40px 210px;
+    }
+}
+
 @media (max-width: 715px){
     #menu{
         display: none;
@@ -762,5 +762,6 @@ footer p{
     #projetos {
         padding: 75px 20px 50px 20px;
     }
+
 }
 
