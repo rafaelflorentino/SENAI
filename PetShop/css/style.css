@@ -67,11 +67,14 @@ html{
 }
 /* Header */
 header{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background: #00a1e4;
-    padding: 15px 15px;   
+    padding: 12px 15px;
+    position: fixed;
+    top: 0px; 
 }
 
 header #logo{
@@ -118,4 +121,68 @@ header a{
 }
 header a:hover{
     color: #1d5da2;
+}
+#botao-menu{
+    display: none;
+    font-weight: 900;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+#botao-menu:hover{
+    color: #1d5da2;
+}
+header nav #menu-mobile{
+    display: none;
+}
+header #menu-mobile{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    display: block;
+    width: 60%;
+    height: 100%;
+    background: #cce9fd;
+    background: #1d5da2;
+    text-align: center;
+}
+header #menu-mobile a{
+    display: block;
+    padding: 20px 0px; 
+}
+header #menu-mobile i{
+    margin: 20px 20px 20px 20px;
+    text-align: right;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+}
+header #menu-mobile ul li:first-child{
+    text-align: right;
+}
+header #menu-mobile i:hover{
+    color: #cce9fd;
+}
+
+header #menu-mobile a:hover{
+    background: #cce9fd;
+}
+main{
+    padding-top: 73px;
+}
+
+footer{
+    background: #00a1e4;
+    text-align: center;
+    padding: 25px 20px;
+    color: white;
+}
+@media (max-width: 765px){
+    header #menu{
+        display: none;
+    }
+    #botao-menu{
+        display: block;
+    }
+
 }
