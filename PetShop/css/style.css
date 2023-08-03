@@ -116,7 +116,7 @@ header a{
     text-decoration: none;
     color: white;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 17px;
     transition: all 0.3s ease 0s;
 }
 header a:hover{
@@ -125,21 +125,21 @@ header a:hover{
 #botao-menu{
     display: none;
     font-weight: 900;
-    font-size: 30px;
+    font-size: 32px;
     color: white;
     cursor: pointer;
 }
 #botao-menu:hover{
     color: #1d5da2;
 }
-header nav #menu-mobile{
-    display: none;
-}
+
 header #menu-mobile{
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateX(40rem);
     position: fixed;
     top: 0px;
     right: 0px;
-    display: block;
     width: 60%;
     height: 100%;
     background: #cce9fd;
@@ -149,6 +149,7 @@ header #menu-mobile{
 header #menu-mobile a{
     display: block;
     padding: 20px 0px; 
+    font-size: 22px;
 }
 header #menu-mobile i{
     margin: 20px 20px 20px 20px;
