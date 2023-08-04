@@ -698,7 +698,7 @@ footer p{
     }
     #info h3 {
         /* width: initial; */
-        max-width: 96.389%;
+        max-width: 96.37%;
         
     }    
     #info .redes-home {
@@ -744,7 +744,7 @@ footer p{
 
 @media screen and (min-width: 451px) and (max-width: 714px){
     #home #container-home {
-        padding: 100px 40px 210px;
+        padding: 80px 40px 230px;
     }
 }
 
