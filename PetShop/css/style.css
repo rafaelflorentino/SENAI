@@ -14,6 +14,9 @@ table{border-collapse:collapse;border-spacing:0}
 hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
 input,select{vertical-align:middle}
 *{box-sizing: border-box;}
+p{margin: 0px; padding: 0px}
+a:hover{text-decoration: none;}
+li{list-style: none;}
 
 /*  Fim Reset Css */
 
@@ -62,6 +65,7 @@ html{
     background: #f3eee8;
     background: #74cb90;
     background: #cce9fd;
+    background: #229dc3;
     background: white;
     
 }
@@ -75,6 +79,7 @@ header{
     padding: 12px 15px;
     position: fixed;
     top: 0px; 
+    z-index: 10000;
 }
 
 header #logo{
@@ -133,10 +138,14 @@ header a:hover{
     color: #1d5da2;
 }
 
+header a{
+    text-decoration: none;
+}
+
 header #menu-mobile{
     opacity: 0;
     transition: 0.5s;
-    transform: translateX(40rem);
+    transform: translateX(100rem);
     position: fixed;
     top: 0px;
     right: 0px;
@@ -145,6 +154,7 @@ header #menu-mobile{
     background: #cce9fd;
     background: #1d5da2;
     text-align: center;
+    z-index: 10001;
 }
 header #menu-mobile a{
     display: block;
@@ -170,6 +180,44 @@ header #menu-mobile a:hover{
 }
 main{
     padding-top: 73px;
+}
+/* Inicio Espécies*/
+#especies{
+    background: whitesmoke;
+    height: 80px;
+}
+#especies ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#especies ul li{
+    display: inline-block;
+    
+}
+#especies ul li a{
+   text-decoration: none;
+   color: #175ea8;
+}
+
+/* Início Vitrine*/
+.carousel-caption{
+    color: #9ae1ff;
+    font-weight: bolder;
+    text-shadow: 0.1em 0.1em 0.4em black;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-image: none;
+}
+.carousel-control-prev i, .carousel-control-next i{
+    color: #1d5da2;
+    font-size: 30px;
+}
+
+/* Texto */
+.cont{
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 footer{

@@ -17,21 +17,21 @@ window.onload = function () {
 
     btnFechar.onclick = function () {
         menu.style.transition="0.5s";  
-        menu.style.transform="translateX(40rem)";
+        menu.style.transform="translateX(100rem)";
         menu.style.opacity= "0";  
     };
 
     /* Fechar o menu depois de ser clicado */
     menu.onclick = function () {
         menu.style.transition="0.5s";  
-        menu.style.transform="translateX(40rem)";
+        menu.style.transform="translateX(100rem)";
         menu.style.opacity= "0";  
     };
 
      /* Fechar o menu se clicar fora dele */
      corpo.onclick = function () {
         menu.style.transition="0.5s";  
-        menu.style.transform="translateX(40rem)";
+        menu.style.transform="translateX(100rem)";
         menu.style.opacity= "0";  
     };
     
