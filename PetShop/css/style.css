@@ -184,7 +184,9 @@ main{
 /* Inicio Espécies*/
 #especies{
     background: whitesmoke;
-    height: 80px;
+    height: 110px;
+    padding-top: 5px;
+    padding-bottom: 10px;
 }
 #especies ul{
     display: flex;
@@ -193,7 +195,11 @@ main{
 }
 #especies ul li{
     display: inline-block;
+    text-align: center;
     
+}
+#especies ul li img{
+    display: block;
 }
 #especies ul li a{
    text-decoration: none;
@@ -219,6 +225,29 @@ main{
     max-width: 1200px;
     margin: 0 auto;
 }
+
+
+/* Artigos */
+#artigos #cont-artigos{
+    background: #cde9fe;
+}
+#artigos #top-artigos{
+    display: block;
+    height: 82px;
+    background-image: url(../img/bg-topo-azul.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#artigos #bot-artigos{
+    display: block;
+    height: 69px;
+    background-image: url(../img/bg-bottom-azul.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
 
 footer{
     background: #00a1e4;
