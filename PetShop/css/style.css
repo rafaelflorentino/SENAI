@@ -47,9 +47,9 @@ li{list-style: none;}
     src: url(../fonts/Poppins-Regular.ttf);
   }
 html{
+    scroll-behavior: smooth;
     font-family: Poppins;
     scroll-behavior: smooth;
-    background: #e7f0f7;
     background: #175ea8;
     background: #1d5da2;
     background: #00a1e4;
@@ -67,6 +67,7 @@ html{
     background: #cce9fd;
     background: #229dc3;
     background: white;
+    background: #e7f0f7;
     
 }
 /* Header */
@@ -187,6 +188,10 @@ main{
     height: 110px;
     padding-top: 5px;
     padding-bottom: 10px;
+    overflow: hidden;
+}
+#especies a:hover{
+    opacity: 0.7;
 }
 #especies ul{
     display: flex;
@@ -225,6 +230,29 @@ main{
     max-width: 1200px;
     margin: 0 auto;
 }
+/* Início Cards */
+#cards{
+    width: 100%;
+    padding: 50px 0px;
+    text-align: center;
+    background: #e7f0f7;
+}
+#cards h1{
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 800;
+    color: #175ea8;
+    margin-bottom: 50px;
+}
+#cont-cards{
+    display: flex;
+    justify-content: space-around;  
+}
+#cards img:hover{
+    transition: 0.9s;
+    transform: scale(1.1,1.1);
+    opacity: 0.8;
+}
 
 
 /* Artigos */
@@ -248,12 +276,29 @@ main{
 
 }
 
+/* Início footer */
 
 footer{
     background: #00a1e4;
     text-align: center;
     padding: 25px 20px;
     color: white;
+}
+
+#redes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#redes li{
+    display: inline-block;
+    margin-right: 15px;
+}
+#redes a{
+    color: white;
+}
+#redes a:hover{
+    color: #1d5da2;
 }
 @media (max-width: 765px){
     header #menu{
