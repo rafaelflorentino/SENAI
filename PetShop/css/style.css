@@ -236,6 +236,9 @@ main{
     padding: 50px 0px;
     text-align: center;
     background: #e7f0f7;
+    background: url(../img/pet3.png) ;
+    background-size: contain;
+
 }
 #cards h1{
     font-family: Poppins;
@@ -246,7 +249,15 @@ main{
 }
 #cont-cards{
     display: flex;
-    justify-content: space-around;  
+    margin-top: 1.6rem;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+.item-card{
+    margin-bottom: 20px;
 }
 #cards img:hover{
     transition: 0.9s;
@@ -257,7 +268,11 @@ main{
 
 /* Artigos */
 #artigos #cont-artigos{
-    background: #cde9fe;
+    /* background: #cde9fe; */
+}
+#cont-artigos{
+    background: #cde9fe url(../img/pet.png);
+    background-size: cover;
 }
 #artigos #top-artigos{
     display: block;
@@ -300,6 +315,14 @@ footer{
 #redes a:hover{
     color: #1d5da2;
 }
+
+/* Responsividade */
+@media (max-width: 450px){
+    #cont-cards {
+        justify-content: center;
+    }
+
+}
 @media (max-width: 765px){
     header #menu{
         display: none;
@@ -307,5 +330,12 @@ footer{
     #botao-menu{
         display: block;
     }
+}
 
+@media (max-width: 945px){
+    #cont-cards {
+
+        justify-content: space-around;
+
+    }
 }
