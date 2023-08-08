@@ -265,11 +265,8 @@ main{
     opacity: 0.8;
 }
 
-
 /* Artigos */
-#artigos #cont-artigos{
-    /* background: #cde9fe; */
-}
+
 #cont-artigos{
     background: #cde9fe url(../img/pet.png);
     background-size: cover;

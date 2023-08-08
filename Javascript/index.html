@@ -6,6 +6,7 @@
     <title>JavaScript</title>
 </head>
 <body>
+    
     <p id="demo">Paragrafo</p> <!-- Terá o texto alterado pela função myFunction -->
     <!-- onclick="myFunction()" chama a função: myFunction" -->
     <button type="button" onclick="myFunction()">Try it</button>
@@ -60,7 +61,7 @@
 
     <!-- Operadores -->
     <script>
-        let soma = 1 + 1; // +
+        let soma2 = 1 + 1; // +
         let subtracao = 2 - 1; // -
         let multiplicacao = 5 * 5; // *
         let divisao = 10 / 2; // /
@@ -68,12 +69,116 @@
 
      <!-- Concatenar -->
      <script>
-        let a = "5" + 2+3; //523
-        let b = "5" + (2+3); //55
-        let c = 2 + 3 +"5"; // 55
+        let a1 = "5" + 2+3; //523
+        let b1 = "5" + (2+3); //55
+        let c1 = 2 + 3 +"5"; // 55
 
         let nome = "Roberto" + " " + "Carlos"
      </script>
+
+     <!-- Tipos de dados -->
+     <script>
+        // Numbers:
+        let length = 16;
+        let weight = 7.5;
+
+        // Strings:
+        let color = "Yellow";
+        let lastName = "Johnson";
+
+        // Booleans
+        let z = true;
+        let y = false;
+
+        // Object:
+        const person = {firstName:"John", lastName:"Doe"};
+
+        // Array object:
+        const cars = ["Saab", "Volvo", "BMW"];
+
+        // Date object:
+        const date = new Date("2022-03-25");
+
+        // Typeof mostra o tipo da variável
+        console.log(typeof "sdf");
+        console.log(typeof 5);
+        console.log(typeof true); 
+     </script>
+
+    <!-- Função com resultado salvo dentro de uma variável e impresso na tela -->
+    <p id="titulo">titulo = </p>
+
+    <script>
+        function myFunction(p1, p2) {
+            return p1 * p2;
+        }
+        let resultado = myFunction(4, 3);
+        document.getElementById("titulo").innerHTML += resultado;
+    </script>
+
+<!-- Objeto em javascript -->
+    <div id="conteudo"></div>
+    <script>
+        // Create an object:
+        const pessoa = {
+
+          // Atributos
+          firstName: "John",
+          lastName: "Doe",
+          age: 50,
+          eyeColor: "blue",
+
+          // Métodos
+          fullName : function() {
+            return this.firstName + " " + this.lastName; // this chama o objeto que ele pertence
+          }
+        };
+        
+        // Display some data from the object:
+        document.getElementById("conteudo").innerHTML =
+        pessoa.firstName + " is " + pessoa.age + " years old. "+ pessoa["lastName"]+ " Nome Completo : "+ pessoa.fullName();
+        // 2 Formas de chamar objeto: pessoa.firstName ou  pessoa["firstName"]
+    </script>
+
+    <!-- Colocando conteúdo em um outro elemento (getElementById()) ou no próprio elemento (this) -->
+    <div id="dataAtual"></div>
+    <button onclick="document.getElementById('dataAtual').innerHTML=Date()">The time is?</button>
+    <button onclick="this.innerHTML=Date()">The time is?</button>
+
+
+    <!-- IF -->
+    <p id="if">Good Evening!</p>
+
+    <script>
+        if (new Date().getHours() < 18) {
+            document.getElementById("if").innerHTML = "Good day!";
+        }
+    </script>
+
+    <!-- Exercicio Alunos sala, Mensagem porta aberta/fechada -->
+
+    <label for="aluno">Digite a quantidade de alunos na sala: </label>
+    <input type="text" name="aluno" id="qntSala">
+    <button onclick="verificaSala()">Botão Sala</button>
+
+    <div id="porta"></div>
+    <script>
+        function verificaSala(){
+            var alunosSala = document.getElementById("qntSala").value;
+            if(alunosSala <= 0){
+                console.log("Abra a porta!"); // Mostra valor no console
+                //document.write("Abra a porta!"); // write Apaga todo html e imprimi texto na tela.
+                document.getElementById("porta").innerHTML = "Abra a porta!";
+            }else{
+                console.log("Feche a porta!"); // Mostra valor no console
+                //document.write("Feche a porta!"); // write Apaga todo html e imprimi texto na tela.
+                document.getElementById("porta").innerHTML = "Feche a porta!";
+            }
+        }
+    </script>
+    
+
+
      
 <script src="index.js"></script>    
 </body>
