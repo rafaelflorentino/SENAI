@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <div id="show"></div>
+    <div id="show2"></div>
+    <div id="show3"></div>
+    <div id="show4"></div>
+    <script>
+        /* a) If Then*/
+
+        // Exemplo 01
+        var idade = 25;
+
+        if (idade >= 18) {
+            console.log("Maior de idade!")
+        }
+        if (idade < 18) {
+            console.log("Menor de idade!")
+        }
+
+        // Exemplo 02
+        let sexo = 'm'
+        if (sexo == 'm') {
+            console.log("Sexo Masculino.")
+        }
+        if (sexo == 'f') {
+            console.log("Sexo Feminino.")
+        }
+
+        /* b) If Else*/
+
+        // Exemplo 01
+        const hour = new Date().getHours();
+        let greeting;
+
+        if (hour < 18) {
+            greeting = "Good day";
+        } else {
+            greeting = "Good evening";
+        }
+        console.log(greeting);
+        document.getElementById("show").append(greeting);
+
+        // Exemplo 02
+        let media = 5;
+
+        if (media >= 7) {
+            console.log("Aprovado!")
+        } else {
+            console.log("Reprovado!");
+        }
+
+        /* c) If Aninhado */
+
+        // Exemplo 01
+        let nota = 6;
+
+        if (nota >= 6) {
+            if (nota >= 7) {
+                console.log("Aprovado!")
+            } else {
+                console.log("Recuperação!");
+            }
+
+        } else {
+            console.log("Reprovado!");
+        }
+
+        // Exemplo 02
+        var idadeAtual = 17;
+        if (idade => 16) {
+            if (idade < 18) {
+                console.log("Voto Facultativo.");
+            } else {
+                console.log("Voto Obrigatório.");
+            }
+        } else {
+            console.log("Você não pode Votar ainda.");
+        }
+
+        /* d) Case Select*/
+
+        // Exemplo 01
+        let day;
+        switch (new Date().getDay()) {
+            case 0:
+                day = "Sunday";
+                break;
+            case 1:
+                day = "Monday";
+                break;
+            case 2:
+                day = "Tuesday";
+                break;
+            case 3:
+                day = "Wednesday";
+                break;
+            case 4:
+                day = "Thursday";
+                break;
+            case 5:
+                day = "Friday";
+                break;
+            case 6:
+                day = "Saturday";
+        }
+        console.log(day);
+
+        // Exemplo 02
+        let notaFinal= 10;
+        switch (notaFinal) {
+            case 5:
+                text = "Recuperação.";
+                break;
+            case 6:
+            case 7:
+            case 8:
+            case 9:
+            case 10:
+                text = "Aprovado!";
+                break;
+            default:
+                text = "Reprovado.";
+        }
+        console.log(text);
+
+        /* e) Enquanto faça (While)*/
+
+            // Exemplo 01
+            let texto = "";
+            let i = 0;
+            while (i < 10) {
+                texto += "<br>The number is " + i;
+                console.log(i);
+                i++;
+            }
+            document.getElementById("show2").innerHTML = texto;
+
+            // Exemplo 02
+            i = 10;
+            while (i >= 1) {
+                console.log(i);
+                i--;
+            }
+
+        /* f) Faça Enquanto (Do While) */
+
+            // Exemplo 01
+            do {
+                console.log("The number is: " + i);
+                i++;
+            }
+            while (i < 10);  
+
+            // Exemplo 02  
+            i = 10;
+            do {
+                console.log("O número é: " + i);
+                i--;
+            }
+            while (i >= 1);              
+
+        /* g) for  */
+
+            // Exemplo 01
+            const cars = ["BMW", "Volvo", "Saab", "Ford", "Fiat", "Audi"];
+
+            let text2 = "";
+            for (let i = 0; i < cars.length; i++) {
+                text2 += cars[i] + "<br>";
+            }
+            document.getElementById("show3").innerHTML = text2;
+
+            // Exemplo 02  
+            const frutas = ["Pera", "Uva", "Maça", "Laranja", "Manga", "Goiaba"];
+
+            let text4 = "";
+            for (let i = 0; i < cars.length; i++) {
+                text4 += frutas[i] + "<br>";
+            }
+            document.getElementById("show4").innerHTML = text4;
+             
+        /* h) for of */
+
+            // Exemplo 01
+            const carros = ["BMW", "Volvo", "Mini"];
+            
+            for (let x of carros) {
+                console.log(x);
+            }
+
+            // Exemplo 02   
+            const pessoas = ["Ana", "Pedro", "Carlos","Amanda","Fernando"];
+            
+            for (let pessoa of pessoas) {
+                console.log(pessoa);
+            }            
+    </script>
+</body>
+
+</html>

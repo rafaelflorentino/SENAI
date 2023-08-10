@@ -669,9 +669,10 @@ footer p{
         
     }   
     #home #container-home {
-        background: url('../img/Desktop-Mini.jpg') lightgray  no-repeat center;
-        /* background-size: auto;
-        background-position: 57% 15%; */
+        background: url(../img/Desktop-Mini.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-attachment: initial !important;
     } 
     #home #container-home {
         padding: 90px 10px;
@@ -714,9 +715,10 @@ footer p{
         margin-top: 25px;
     }
     #escolaridade {
-        background: url('../img/Amsterdã-Mini.jpg') lightgray  no-repeat center;
-        /* background-position: 40% 0%;
-        padding: 93px 20px 40px 20px; */
+        background: url('../img/Amsterdã-Mini.jpg');
+        background-attachment: initial !important;
+        background-size: cover;
+        background-repeat: no-repeat;
         padding: 75px 20px 40px 20px;
     }
     #seta a{
@@ -729,7 +731,10 @@ footer p{
         padding: 15px;
     }
     #projetos {
-        background: url('../img/cup-of-coffee-Mini.jpg') lightgray no-repeat cover;
+        background: url('../img/cup-of-coffee-Mini.jpg') no-repeat cover;
+        background-attachment: initial !important;
+        background-size: cover;
+        background-repeat: no-repeat;
         padding: 75px 20px 50px 20px;
     }
     #experiencia #redes li{
@@ -764,4 +769,3 @@ footer p{
     }
 
 }
-
