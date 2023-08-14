@@ -184,11 +184,20 @@ main{
 }
 /* Inicio Espécies*/
 #especies{
-    background: whitesmoke;
-    height: 110px;
-    padding-top: 5px;
-    padding-bottom: 10px;
-    overflow: hidden;
+    background: white;
+    height: 115px;
+    padding-top: 8px;
+    padding-bottom: 13px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    max-width: 1280px;
+    margin: 15px auto;
+    border-radius: 23px;
+    border: 1px solid rgb(237, 237, 237);
+}
+#especies::-webkit-scrollbar{
+    display: none;
+    scrollbar-width: none;
 }
 #especies a:hover{
     opacity: 0.7;
@@ -209,6 +218,7 @@ main{
 #especies ul li a{
    text-decoration: none;
    color: #175ea8;
+   font-weight: 500;
 }
 
 /* Início Vitrine*/
@@ -224,6 +234,18 @@ main{
     color: #1d5da2;
     font-size: 30px;
 }
+.carousel-item a > img {
+     width: 100%;    
+     height: 310px;  
+}
+.carousel-indicators li{
+    background-color: #9ae1ff;
+}
+
+#carouselExampleIndicators .active{
+    background-color: #175ea8de;
+}
+  
 
 /* Texto */
 .cont{
@@ -286,12 +308,62 @@ main{
     background-image: url(../img/bg-bottom-azul.png);
     background-repeat: no-repeat;
     background-size: cover;
+}
+#artigos h1 {
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 800;
+    color: #175ea8;
+    margin-bottom: 50px;
+    text-align: center;
+}
 
+/* Artigos link*/
+#link-artigo{
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+} 
+#link-artigo article{
+    max-width: 269px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgb(237, 237, 237);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 2px 8px 0px;  
+    margin: 0px 15px;
+}
+#link-artigo .textos-artigo{
+    padding: 15px;
+}
+#link-artigo article img{
+    margin-bottom: 15px;
+    width: 100%;
+}
+#link-artigo article h2{
+    margin-bottom: 10px;
+    color: #175ea8;
+}
+#link-artigo article a{
+    text-align: center;
+    /* max-width: 190px; */
+    margin: 0 auto;
+    margin-top: 50px;   
+    padding: 10px;
+    display: block;
+    color: white;
+    background: #00a1e4;
+    border-radius: 35px;
+}
+#link-artigo article a:hover{
+    background-color: #175ea8;
 }
 
 /* Início footer */
 
 footer{
+    margin-top: 50px;
     background: #00a1e4;
     text-align: center;
     padding: 25px 20px;
@@ -316,8 +388,25 @@ footer{
 
 /* Responsividade */
 @media (max-width: 450px){
+    .carousel-item a > img {   
+        height: 180px;  
+    }
     #cont-cards {
         justify-content: center;
+    }
+    #especies ul {
+        justify-content: space-between;
+    }
+    #especies ul li {
+        margin-left: 10px;
+    }
+    #link-artigo article {
+        display: block;
+        margin: 0px auto 20px;
+    }
+
+    #link-artigo {
+        display: block;
     }
 
 }
