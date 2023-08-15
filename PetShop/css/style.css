@@ -360,6 +360,41 @@ main{
     background-color: #175ea8;
 }
 
+/* Cartões */
+#cartoes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.cartao-item{
+    width: 250px;
+    height: 300px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color:#00a1e4;
+    color: white;
+    padding: 20px;
+    border-radius: 15px;
+}
+.cartao-item h1{
+    margin-bottom: 20px;
+}
+.cartao-item i{
+    font-size: 35px;
+    color: #175ea8;
+}
+.cartao-item img{
+    margin-bottom: 15px;
+}
+.cartao-item:hover{
+    transition: 0.9s;
+    transform: scale(1.1,1.1);
+    /* opacity: 0.9; */
+}
+
 /* Início footer */
 
 footer{
@@ -426,3 +461,6 @@ footer{
 
     }
 }
+
+
+/* imagens grátis https://www.pngwing.com/ */

@@ -176,10 +176,98 @@
             }
         }
     </script>
-    
+
+    <!-- Função -->
+    <script>
+        let num1 = 5;
+        let num2 = 8;
+
+        somar(num1, num2); // Chamando função somar
+        console.log(somar2); // Chamando função somar2 e imprimindo
+        somar3(5,5,5,5,5); // Chamando função somar3
+        somar4(2,3,4); // Chamando função somar4
+
+        // Função sem retorno
+        function somar(numero1 = 0, numero2 = 0){
+            console.log(numero1 + numero2);
+        }
+
+        // Função com retorno
+        function somar2(numero1 = 0, numero2 = 0){
+            return numero1 + numero2;
+        }
+
+        // Function usando Spread
+        function somar3(...valores){ // (...) permite que receba vários valores ou uma aray de valores
+            let tam =valores.length;
+            let res =0;
+
+            for(let i=0;i<tam; i++){
+                res += valores[i];
+            }
+            console.log(res);
+        }
+
+        // (...) Spread
+        function somar4(...valores){ // (...) permite que receba vários valores ou uma aray de valores
+            let result = 0;
+            for(valor of valores){
+                result += valor;
+            }
+            console.log(result);
+        }
+
+        // Função Anônima (const f = function)
+        const f = function(...valores){ // Só e criada quando a constante for chamada, e o spread aceita varios valores(array de valores)
+            let res= 0;
+            for(v of valores){
+                res +=v;
+            }
+            return res;
+        }
+
+        // Map e getElementById
+        const d1 = "<p>Paragrafo</p>";
+        const d2 = "<h1>Título</h1>";
+        const d3 = document.getElementById("conteudo"); // O getElementById só pega um elemento.
+        
+        const arrayElementos = [d1,d2,d3]
+        arrayElementos.map((e) =>{  // Usar o Map para percorrer
+            //e.innerHTML = "adsfdsfds"; 
+            console.log(e);
+        });
+
+        //  TagName
+        const arrayDivs = [...document.getElementsByTagName("div")]; // [...] Transforma em uma array de elementos
+        arrayDivs.map((e) =>{  // Usar o Map para percorrer
+            console.log(e);
+        });
+
+        // This
+        function aluno(nome, nota){
+            this.nome = nome; // Cria uma variável nome e atribui a ele o valor do parâmetro nome
+            this.nota = nota; // Cria uma variável nota e atribui a ele o valor do parâmetro nota
+
+            console.log(this.nome); 
+            console.log(this.nota);
+
+            this.dados_anonimo=function(){
+                setTimeout(function(){ // Sem arrow functions não conseguirá acessar o this de fora so da função setTimeout, precisa de setTimeout( () =>{}
+                    this.nome = "X"; // Cria variável nome
+                    this.nota = 6; // Cria variável nota
+                    console.log("Nome: "+this.nome); // Não consegue acessar aluno.nome, só os dados da função que esta dentro. 
+                    console.log("Nota: "+this.nota);// Não consegue acessar aluno.nota, só os dados da função que esta dentro.
+                },2000)
+                
+            }
+        }
+        const alt = new aluno("Rafael", 100);
+        alt.dados_anonimo();
+
+    </script>
 
 
-     
+         
 <script src="index.js"></script>    
 </body>
 </html>

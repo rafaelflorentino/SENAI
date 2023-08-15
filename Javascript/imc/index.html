@@ -16,8 +16,8 @@
             <input type="number" name="idade" id="idade"><br/><br/>
 
             <label for="sexo"> Digite o Sexo:
-            <input type="radio" name="sexo" value="masculino" id="masc"/><label for="masc"> Masculino</label>
-            <input type="radio" name="sexo" value="feminino" id="fem"/> <label for="fem">  Feminino</label><br/><br />
+            <input type="radio" name="sexo" value="masculino"/>Masculino
+            <input type="radio" name="sexo" value="feminino"/> Feminino <br/><br />
 
             <label for="peso">Digite seu Peso: </label>
             <input type="text" name="peso" id="peso"><br/><br/>
@@ -66,7 +66,6 @@
 
     <script>
         function Calcular(){
-            preventDefault();
             
             var nome = document.getElementById("nome").value;
             var idade = document.getElementById("idade").value;
@@ -77,7 +76,7 @@
             imc(nome,idade,sexo,peso,altura); // Chama a função que calcula o imc
             imprimirDados(nome, idade, sexo, peso, altura); // Chama a função que imprime os dados
 
-            return false; S
+            return false; //preventDefault();
         }
 
         function imc(nome, idade, sexo, peso, altura){
