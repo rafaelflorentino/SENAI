@@ -34,6 +34,23 @@ window.onload = function () {
         menu.style.transform="translateX(100rem)";
         menu.style.opacity= "0";  
     };
-    
+
+    // Função para ser executada quando ocorrer o evento scroll.
+    const seta = document.getElementById('seta');
+
+    function handleScroll() {
+        
+        // Obtém a posição vertical do scroll.
+        const scrollTop = window.scrollY;
+
+        // Botão de subir aparecer e desaparecer com scroll.
+        if (scrollTop > 560) {
+            seta.style.display = "block";
+        } else {
+            seta.style.display = "none";
+        }
+    }
+    // Adiciona o ouvinte de evento 'scroll' ao objeto window.
+    window.addEventListener('scroll', handleScroll);
 
 }

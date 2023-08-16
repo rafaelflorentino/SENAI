@@ -360,7 +360,19 @@ main{
     background-color: #175ea8;
 }
 
-/* Cartões */
+/* Fidelidade */
+#fidelidade{
+    padding: 50px 0px 100px;
+
+}
+#fidelidade  h1 {
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 800;
+    color: #175ea8;
+    margin-bottom: 50px;
+    text-align: center;
+}
 #cartoes{
     display: flex;
     justify-content: space-around;
@@ -379,7 +391,7 @@ main{
     padding: 20px;
     border-radius: 15px;
 }
-.cartao-item h1{
+.cartao-item h2{
     margin-bottom: 20px;
 }
 .cartao-item i{
@@ -395,16 +407,166 @@ main{
     /* opacity: 0.9; */
 }
 
+/* Parallax */
+#parallax{
+    height: 100vh;
+    background: url(../img/variosCachorros.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 100vw rgba(41, 41, 41, 0.75);
+}
+#parallax h2{
+    color: white;
+    font-family: 'Niconne';
+    font-size: 6rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+/*Quem somos*/
+#QuemSomos{
+    padding: 50px 0px 100px;
+}
+#QuemSomos h1 {
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 800;
+    color: #175ea8;
+    margin-bottom: 50px;
+}
+#QuemSomos p {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+/* Banner comprido */
+#banner-comprido img{
+    width: 100%;
+}
+/* Seta*/
+#seta{
+    display: none; 
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 1000;
+}
+
+#seta a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: #11345a;
+    color: white;
+    font-size: 27px;
+    border-radius: 26px;
+    text-decoration: none;
+}
+#seta a:hover{
+    filter: brightness(90%);
+}
+
+/* Fazer seta ficar mudando de cor */
+#seta a {
+    animation-name: seta;
+    animation-timing-function: linear;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes seta {
+    0%   {background-color: #11345a;}
+    25%  {background-color: #11345a;}
+    50%  {background-color: gray;}
+    75%  {background-color: grau;}
+    100% {background-color: #11345a;}
+  }
+
+  /* Fazer seta crescer e diminuir*/
+#seta{
+    transition: 1s;
+}
+#seta:hover{
+    transform: scale(1.1,1.1);
+}
+
+
 /* Início footer */
 
 footer{
     margin-top: 50px;
+    background: #175ea8;
     background: #00a1e4;
     text-align: center;
     padding: 25px 20px;
     color: white;
 }
-
+#menu-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#logo-footer img{
+    margin-bottom: 10px;
+}
+#logo-footer p{
+    font-family: 'Niconne';
+    font-size: 26px;
+}
+#logo-footer a:hover{
+    opacity: 0.8;
+}
+#links-footer{
+    text-align: left;
+}
+#links-footer h2{
+    margin-bottom: 15px;   
+    font-size: 18px;
+}
+#links-footer ul li{
+    margin-bottom: 11.8px;   
+}
+#links-footer ul li a{
+    color: white;  
+    font-style: 200; 
+}
+#links-footer ul li a:hover{
+    color: #00a1e4;  
+}
+#localizacao{
+    text-align: left;
+}
+#localizacao h2{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+#localizacao p{
+    margin-bottom: 10px;
+    font-weight: 200;
+}
+#localizacao p span{
+    font-size: 12px;
+} 
+#localizacao iframe{
+    margin-bottom: 10px;
+}
+#linha{
+    margin-bottom: 30px;
+}
+#linha hr{
+    border-color: white;
+}
+#redes-footer{
+    display: flex;
+    justify-content: space-around;
+}
 #redes{
     display: flex;
     align-items: center;
