@@ -77,6 +77,7 @@ header{
     justify-content: space-between;
     align-items: center;
     background: #00a1e4;
+    background-image: -webkit-linear-gradient(315deg, #00A1DE, #2477cd);
     padding: 12px 15px;
     position: fixed;
     top: 0px; 
@@ -333,6 +334,14 @@ main{
     border: 1px solid rgb(237, 237, 237);
     box-shadow: rgba(0, 0, 0, 0.19) 0px 2px 8px 0px;  
     margin: 0px 15px;
+
+}
+#link-artigo article:hover{
+    transform: scale(1.1,1.1);
+    transition: 1s;
+}
+#link-artigo article:hover img{
+    filter: grayscale(65%);
 }
 #link-artigo .textos-artigo{
     padding: 15px;
@@ -353,11 +362,14 @@ main{
     padding: 10px;
     display: block;
     color: white;
-    background: #00a1e4;
+    background-image: -webkit-linear-gradient(315deg, #00a1e4, #33c2ff);
     border-radius: 35px;
 }
+
 #link-artigo article a:hover{
-    background-color: #175ea8;
+    transition: 3s;
+    background-image: -webkit-linear-gradient(315deg, #175ea8, #175ea8);
+    
 }
 
 /* Fidelidade */
@@ -387,10 +399,13 @@ main{
     justify-content: center;
     display: flex;
     background-color:#00a1e4;
+    background-image: -webkit-linear-gradient(315deg, #00a1e4, #33c2ff);
     color: white;
     padding: 20px;
     border-radius: 15px;
+    box-shadow: 10px 10px 15px #00000094;
 }
+
 .cartao-item h2{
     margin-bottom: 20px;
 }
@@ -402,8 +417,9 @@ main{
     margin-bottom: 15px;
 }
 .cartao-item:hover{
-    transition: 0.9s;
+    transition: 0.8s;
     transform: scale(1.1,1.1);
+    filter: grayscale(25%); 
     /* opacity: 0.9; */
 }
 
@@ -429,7 +445,7 @@ main{
 
 /*Quem somos*/
 #QuemSomos{
-    padding: 50px 0px 100px;
+    padding: 50px 20px 100px;
 }
 #QuemSomos h1 {
     font-family: Poppins;
@@ -445,6 +461,9 @@ main{
 /* Banner comprido */
 #banner-comprido img{
     width: 100%;
+}
+#banner-comprido img:hover{
+    filter: grayscale(75%); 
 }
 /* Seta*/
 #seta{
@@ -504,6 +523,7 @@ footer{
     margin-top: 50px;
     background: #175ea8;
     background: #00a1e4;
+    background-image: -webkit-linear-gradient(315deg, #00A1DE, #2477cd);
     text-align: center;
     padding: 25px 20px;
     color: white;
@@ -557,6 +577,10 @@ footer{
 #localizacao iframe{
     margin-bottom: 10px;
 }
+#img-footer img:hover{
+    transition: 0.9s;
+    transform: scale(1.1,1.1);
+}
 #linha{
     margin-bottom: 30px;
 }
@@ -581,6 +605,13 @@ footer{
 }
 #redes a:hover{
     color: #1d5da2;
+}
+/* Fazer Redes girar*/
+#redes a i{
+    transition: width 1s, height 1s, transform 1s;
+}
+#redes a:hover i{
+    transform: rotate(360deg);
 }
 
 /* Responsividade */
