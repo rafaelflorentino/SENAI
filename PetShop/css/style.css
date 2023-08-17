@@ -78,7 +78,7 @@ header{
     align-items: center;
     background: #00a1e4;
     background-image: -webkit-linear-gradient(315deg, #00A1DE, #2477cd);
-    padding: 12px 15px;
+    padding: 10px 15px;
     position: fixed;
     top: 0px; 
     z-index: 10000;
@@ -224,9 +224,9 @@ main{
 
 /* Início Vitrine*/
 .carousel-caption{
-    color: #9ae1ff;
+    color: #1d5da4;
     font-weight: bolder;
-    text-shadow: 0.1em 0.1em 0.4em black;
+    text-shadow: 0.1em 0.1em 0.7em black;
 }
 .carousel-control-prev-icon, .carousel-control-next-icon {
     background-image: none;
@@ -237,7 +237,7 @@ main{
 }
 .carousel-item a > img {
      width: 100%;    
-     height: 310px;  
+     /* height: 310px;   */
 }
 .carousel-indicators li{
     background-color: #9ae1ff;
@@ -294,6 +294,7 @@ main{
 #cont-artigos{
     background: #cde9fe url(../img/pet.png);
     background-size: cover;
+    padding-bottom: 50px;
 }
 #artigos #top-artigos{
     display: block;
@@ -374,7 +375,8 @@ main{
 
 /* Fidelidade */
 #fidelidade{
-    padding: 50px 0px 100px;
+    padding: 50px 0px 230px;
+    background: url(../img/pet2.png) 0% 0% / cover;
 
 }
 #fidelidade  h1 {
@@ -434,6 +436,7 @@ main{
     justify-content: center;
     align-items: center;
     box-shadow: inset 0 0 0 100vw rgba(41, 41, 41, 0.75);
+    padding: 0px 20px;
 }
 #parallax h2{
     color: white;
@@ -442,6 +445,9 @@ main{
     text-align: center;
     font-weight: bold;
 }
+
+/* Histórias*/
+
 
 /*Quem somos*/
 #QuemSomos{
@@ -632,11 +638,66 @@ footer{
         display: block;
         margin: 0px auto 20px;
     }
+    #parallax {
+         background-attachment: inherit;
+    }
+    #parallax h2{
+        font-size: 70px;
+   }
 
     #link-artigo {
         display: block;
     }
 
+    #menu-footer {
+        flex-direction: column;
+    }
+    #logo-footer, #links-footer, #localizacao{
+        margin-bottom: 30px;
+    }
+    #links-footer, #localizacao{
+        text-align: center;
+    }
+    #img-footer{
+        margin-bottom: 20px;
+    }
+    #redes {
+        margin-bottom: 15px;
+    }
+    #redes-footer {
+        flex-direction: column-reverse;
+    }
+    #redes-footer p{
+        line-height: 20px;
+    }
+
+
+}
+@media (max-width: 690px){
+    #menu-footer {
+        flex-direction: column;
+    }
+    #logo-footer, #links-footer, #localizacao{
+        margin-bottom: 30px;
+    }
+    #links-footer, #localizacao{
+        text-align: center;
+    }
+    #img-footer{
+        margin-bottom: 20px;
+    }
+    #redes {
+        margin-bottom: 15px;
+    }
+    #redes-footer {
+        flex-direction: column-reverse;
+    }
+    #redes-footer p{
+        line-height: 20px;
+    }
+    #historias img{
+        width: 100%;
+    }
 }
 @media (max-width: 765px){
     header #menu{
@@ -646,7 +707,15 @@ footer{
         display: block;
     }
 }
-
+@media (max-width: 780px){
+    #cartoes{
+        flex-direction: column; 
+        justify-content: space-around;
+    }
+    .cartao-item {
+        margin-bottom: 20px;
+    }
+}
 @media (max-width: 945px){
     #cont-cards {
 
