@@ -21,7 +21,7 @@
 <body>
     <header>
         <div class="container">
-            <a href="#index.html"><img src="img/logoMypet.png" id="logo" alt="MyPet"></a>
+            <a href="index.html"><img src="img/logoMypet.png" id="logo" alt="MyPet"></a>
             <nav>
                 <ul id="menu">
                     <li><a href="index.html">Home</a></li>
@@ -206,99 +206,144 @@
         </section>
 
         <section id="historias" class="cont">
+            <h1>Histórias Incríveis</h1>
             <article>
-                <img src="img/bamse.jpg" alt="cachorro">
-                <h1>Bamse o Cachorro Marinheiro.</h1>
-                <p>Durante a II Guerra Mundial, Bamse se tornou parte da tripulação de um navio norueguês, levado à bordo pelo capitão.
-                     Os tripulantes gostavam tanto dele que ameaçaram fazer um motim quando o capitão disse que o levaria junto com 
-                     ele para outro navio.</p>
-                <p>Como é típico dos cães de sua raça, Bamse gostava de ajudar pessoas: ele resgatava tripulantes que caíam do navio, 
-                    apartava brigas e discussões (!), e guiava tripulantes bêbados de volta a seus postos.
-                </p>
-                <p>
-                    Inteligente, andava de ônibus sozinho (tinha um passe preso a sua coleira) para circular nas cidades de Dundee e 
-                    Montrose (ambas na Escócia), onde o barco aportava quando necessário.
-                </p>
+                <div id="cont-historias">
+                    <div id="img-historia">
+                        <img src="img/bamse.jpg" alt="cachorro">
+                    </div>
+                    <div id="historia-conteudo">
+                        <h2>Bamse o Cachorro Marinheiro.</h2>
+                        <p>Durante a II Guerra Mundial, Bamse se tornou parte da tripulação de um navio norueguês, levado à bordo pelo capitão.
+                            Os tripulantes gostavam tanto dele que ameaçaram fazer um motim quando o capitão disse que o levaria junto com 
+                            ele para outro navio.</p>
+                        <p>Como é típico dos cães de sua raça, Bamse gostava de ajudar pessoas: ele resgatava tripulantes que caíam do navio, 
+                            apartava brigas e discussões (!), e guiava tripulantes bêbados de volta a seus postos.
+                        </p>
+                        <p>
+                            Inteligente, andava de ônibus sozinho (tinha um passe preso a sua coleira) para circular nas cidades de Dundee e 
+                            Montrose (ambas na Escócia), onde o barco aportava quando necessário.
+                        </p>
 
-                <a href="https://hypescience.com/10-tocantes-e-impressionantes-historias-de-cachorros/">Leia mais</a>
+                        <a href="https://hypescience.com/10-tocantes-e-impressionantes-historias-de-cachorros/">Leia mais</a>
+                    </div>
 
-                <h1>Comentarios: </h1>
-
-                <div>
-                    <img src="img/usuario.jpg" alt="foto usuario">
-                    <h2>Fulano da Silva</h2>
-                    <p>Achei muito interessante essa história, támbem tenho um São bernado eles são muito inteligentes.</p>
                 </div>
 
-                <div>
-                    <label>Deixe o seu comentário:</label>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Digite seu comentário aqui."></textarea>
-                    <button>Enviar</button>
-                </div>
+                <div id="comentarios-artigo">
+                    <h2>COMENTÁRIOS  <i class="fa-solid fa-minus"></i></h2>
 
-            </article>
-
-            <article>
-                <img src="img/pickles.jpg" alt="cachorro">
-                <h1>Pickles o Cachorro que salvou a Copa de 1966.</h1>
-                <p>Não se deixem enganar pelo nome engraçado: Pickles teve um papel fundamental na história do futebol.</p>
-                <p>Em 1966, a taça da Copa do Mundo (que seria sediada na Inglaterra) foi roubada quatro meses antes da competição. 
-                    Diversas equipes começaram uma busca frenética, para evitar um constrangimento de proporções internacionais. 
-                    Contudo, quem achou a taça não foram especialistas, e sim um collie chamado Pickles, que estava passeando com 
-                    seu dono e a encontrou em um arbusto.</p>
-                <p>
-                    Sua fama se espalhou sem demora, e fizeram até mesmo um jantar em sua homenagem, no qual ele foi presenteado com 
-                    um osso e um cheque de 1 mil libras esterlinas (que seu dono provavelmente guardou antes que Pickles comesse o 
-                    papel).
-                </p>
-
-                <a href="https://hypescience.com/10-tocantes-e-impressionantes-historias-de-cachorros/">Leia mais</a>
-
-                <h1>Comentarios: </h1>
-
-                <div>
-                    <img src="img/usuario.jpg" alt="foto usuario">
-                    <h2>Fulano da Silva</h2>
-                    <p>Achei muito interessante essa história, támbem tenho um São bernado eles são muito inteligentes.</p>
-                </div>
-
-                <div>
-                    <label>Deixe o seu comentário:</label>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Digite seu comentário aqui."></textarea>
-                    <button>Enviar</button>
+                    <div id="autor">
+                        <div id="info-autor">
+                            <img src="img/usuario.jpg" width="40" height="40" alt="foto usuario">
+                            <div id="coment-text">
+                                <h3>Fulano da Silva</h3>
+                                <p>Achei muito interessante essa história, támbem tenho um São bernado eles são muito inteligentes.</p>
+                            </div>
+                        </div>
+                        <div id="info-autor">
+                            <img src="img/usuario.jpg" width="40" height="40" alt="foto usuario">
+                            <div id="coment-text">
+                                <h3>Ciclano de Souza</h3>
+                                <p>Adorei, esse cachorro e muito lindo!</p>
+                            </div>
+                        </div>
+                        <div id="deixar-comentario">
+                            <label for="text-area">Deixe o seu comentário:</label>
+                            <textarea name="text-area" id="text-area" cols="30" rows="10" placeholder="Digite seu comentário aqui."></textarea>
+                            <div id="cont-btn-enviar">
+                                <button>Enviar</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </article>
 
             <article>
-                <img src="img/Owney.jpg" alt="cachorro">
-                <h1>Owney o Cão carteiro</h1>
-                <p>Owney contrariava o estereótipo dos “cachorros que odeiam carteiros”: ele vivia em agências de correio 
-                    (sem atacar seus funcionários) e acompanhava encomendas transportadas por trem – como um trem nunca se acidentava 
-                    quando ele estava dentro, dizia-se que Owney trazia boa sorte.</p>
-                <p>Durante suas viagens, ele ganhava pequenas medalhas de recordação e, quando não cabia mais nenhuma em sua coleira, 
-                    deram a Owney uma jaqueta onde as medalhas ficavam presas.</p>
-                <p>
-                    Ele ficou tão famoso que o colocaram em uma grande campanha publicitária, na qual viajou pelo mundo em 120 dias 
-                    (quase como na história escrita por Júlio Verne), passando pela América, pela Europa e pela Ásia.
-                </p>
-                <p>Naturalmente, criaram um selo postal em sua homenagem.</p>
+                <div id="cont-historias">
+                    <div id="img-historia">
+                        <img src="img/pickles.jpg" alt="cachorro">
+                    </div>
+                    <div id="historia-conteudo">
+                        <h2>Pickles o Cachorro que salvou a Copa de 1966.</h2>
+                        <p>Não se deixem enganar pelo nome engraçado: Pickles teve um papel fundamental na história do futebol.</p>
+                        <p>Em 1966, a taça da Copa do Mundo (que seria sediada na Inglaterra) foi roubada quatro meses antes da competição. 
+                            Diversas equipes começaram uma busca frenética, para evitar um constrangimento de proporções internacionais. 
+                            Contudo, quem achou a taça não foram especialistas, e sim um collie chamado Pickles, que estava passeando com 
+                            seu dono e a encontrou em um arbusto.</p>
+                        <p>
+                            Sua fama se espalhou sem demora, e fizeram até mesmo um jantar em sua homenagem, no qual ele foi presenteado com 
+                            um osso e um cheque de 1 mil libras esterlinas (que seu dono provavelmente guardou antes que Pickles comesse o 
+                            papel).
+                        </p>
 
-                <a href="https://hypescience.com/10-tocantes-e-impressionantes-historias-de-cachorros/">Leia mais</a>
+                        <a href="https://hypescience.com/10-tocantes-e-impressionantes-historias-de-cachorros/">Leia mais</a>
+                    </div>
 
-                <h1>Comentarios: </h1>
-
-                <div>
-                    <img src="img/usuario.jpg" alt="foto usuario">
-                    <h2>Fulano da Silva</h2>
-                    <p>Achei muito interessante essa história, támbem tenho um São bernado eles são muito inteligentes.</p>
                 </div>
 
-                <div>
-                    <label>Deixe o seu comentário:</label>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Digite seu comentário aqui."></textarea>
-                    <button>Enviar</button>
+                <div id="comentarios-artigo">
+                    <h2>COMENTÁRIOS  <i class="fa-solid fa-minus"></i></h2>
+
+                    <div id="autor">
+                        <div id="info-autor">
+                            <img src="img/usuario.jpg" width="40" height="40" alt="foto usuario">
+                            <div id="coment-text">
+                                <h3>Fulano da Silva</h3>
+                                <p>Achei muito interessante essa história, támbem tenho um São bernado eles são muito inteligentes.</p>
+                            </div>
+                        </div>
+                        <div id="deixar-comentario">
+                            <label for="text-area">Deixe o seu comentário:</label>
+                            <textarea name="text-area" id="text-area" cols="30" rows="10" placeholder="Digite seu comentário aqui."></textarea>
+                            <div id="cont-btn-enviar">
+                                <button>Enviar</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </article>
+
+            <article>
+                <div id="cont-historias">
+                    <div id="img-historia">
+                        <img src="img/Owney.jpg" alt="cachorro">
+                    </div>
+                    <div id="historia-conteudo">
+                        <h2>Owney o Cão carteiro</h2>
+                        <p>Não se deixem enganar pelo nome engraçado: Pickles teve um papel fundamental na história do futebol.</p>
+                        <p>Owney contrariava o estereótipo dos “cachorros que odeiam carteiros”: ele vivia em agências de correio 
+                            (sem atacar seus funcionários) e acompanhava encomendas transportadas por trem – como um trem nunca se acidentava 
+                            quando ele estava dentro, dizia-se que Owney trazia boa sorte.</p>
+                        <p>Durante suas viagens, ele ganhava pequenas medalhas de recordação e, quando não cabia mais nenhuma em sua coleira, 
+                            deram a Owney uma jaqueta onde as medalhas ficavam presas.</p>
+                        <p>
+                            Ele ficou tão famoso que o colocaram em uma grande campanha publicitária, na qual viajou pelo mundo em 120 dias 
+                            (quase como na história escrita por Júlio Verne), passando pela América, pela Europa e pela Ásia.
+                        </p>
+                        <p>Naturalmente, criaram um selo postal em sua homenagem.</p>
+    
+                        <a href="https://hypescience.com/10-tocantes-e-impressionantes-historias-de-cachorros/">Leia mais</a>
+                    </div>
+
+                </div>
+
+                <div id="comentarios-artigo">
+                    <h2>COMENTÁRIOS  <i class="fa-solid fa-plus"></i></h2>
+
+                    <div id="autor">
+                        <div id="deixar-comentario">
+                            <label for="text-area">Deixe o seu comentário:</label>
+                            <textarea name="text-area" id="text-area" cols="30" rows="10" placeholder="Digite seu comentário aqui."></textarea>
+                            <div id="cont-btn-enviar">
+                                <button>Enviar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+          
         </section>
 
         <section>
@@ -337,7 +382,7 @@
     <footer>
         <div id="menu-footer">
             <div id="logo-footer">
-                <a href="#index.html"><img src="img/logoMypet.png" alt="Mypet"></a>
+                <a href="index.html"><img src="img/logoMypet.png" alt="Mypet"></a>
                 <p>Cuidando do seu Pet com carinho.</p>
             </div>
 
