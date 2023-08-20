@@ -53,4 +53,24 @@ window.onload = function () {
     // Adiciona o ouvinte de evento 'scroll' ao objeto window.
     window.addEventListener('scroll', handleScroll);
 
+
+    // Abrir e fechar o acordion
+    let comentarios = document.querySelector("#comentarios-artigo h2");
+    let icone = document.querySelector("#comentarios-artigo h2 i");
+    var autor = document.getElementById("autor");
+
+    comentarios.onclick = function () {
+        
+        if(autor.style.display == "block") {
+            icone.classList.remove("fa-minus");
+            icone.classList.add("fa-plus");
+            autor.style.display = "none";
+        }else{
+            icone.classList.remove("fa-plus");
+            icone.classList.add("fa-minus");
+            autor.style.display = "block";
+        }
+
+    }
+
 }
