@@ -73,4 +73,40 @@ window.onload = function () {
 
     }
 
+    let enviarComentario = document.querySelector("#btn-enviar-comentario");
+
+
+    enviarComentario.onclick = function() {
+        let nome = document.getElementById("nome").value;
+        let comentario = document.getElementById("text-area").value;
+        let areaComentarios = document.getElementById("autores");
+       
+        if(nome == ""){
+            alert("Digite seu nome");    
+        }
+        if(comentario==""){
+            alert("Digite seu comentário");   
+        }else{
+            
+            // Criar comentario em html
+
+            let div = document.createElement('div');
+            div.classList.add("info-autor");
+            div.innerHTML = `
+            <img src="img/usuario.jpg" width="40" height="40" alt="foto usuario">
+            <div id="coment-text">
+                <h3>${nome}</h3>
+                <p>${comentario}</p>
+            </div>`;
+            // Adiciona no html
+            areaComentarios.appendChild(div);
+
+            // limpa os campos do formulario
+            document.getElementById("nome").value = "";
+            document.getElementById("text-area").value = "";
+        }
+
+    }
+
+
 }

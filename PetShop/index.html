@@ -234,25 +234,31 @@
                     <h2>COMENTÁRIOS  <i class="fa-solid fa-plus"></i></h2>
 
                     <div id="autor">
-                        <div id="info-autor">
-                            <img src="img/usuario.jpg" width="40" height="40" alt="foto usuario">
-                            <div id="coment-text">
-                                <h3>Fulano da Silva</h3>
-                                <p>Achei muito interessante essa história, támbem tenho um São bernado eles são muito inteligentes.</p>
+                        <div id="autores">
+                            <div class="info-autor">
+                                <img src="img/usuario.jpg" width="40" height="40" alt="foto usuario">
+                                <div id="coment-text">
+                                    <h3>Fulano da Silva</h3>
+                                    <p>Achei muito interessante essa história, támbem tenho um São bernado eles são muito inteligentes.</p>
+                                </div>
                             </div>
-                        </div>
-                        <div id="info-autor">
-                            <img src="img/usuario.jpg" width="40" height="40" alt="foto usuario">
-                            <div id="coment-text">
-                                <h3>Ciclano de Souza</h3>
-                                <p>Adorei, esse cachorro e muito lindo!</p>
+                            <div  class="info-autor">
+                                <img src="img/usuario.jpg" width="40" height="40" alt="foto usuario">
+                                <div id="coment-text">
+                                    <h3>Ciclano de Souza</h3>
+                                    <p>Adorei, esse cachorro e muito lindo!</p>
+                                </div>
                             </div>
-                        </div>
+                        </div>                        
+
                         <div id="deixar-comentario">
+                            <label for="nome">Nome: </label>
+                            <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+
                             <label for="text-area">Deixe o seu comentário:</label>
                             <textarea name="text-area" id="text-area" cols="30" rows="10" placeholder="Digite seu comentário aqui."></textarea>
                             <div id="cont-btn-enviar">
-                                <button>Enviar</button>
+                                <button id="btn-enviar-comentario">Enviar</button>
                             </div>
                         </div>
                     </div>
