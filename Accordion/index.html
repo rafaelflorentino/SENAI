@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Accordion</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        html{
+            background-color: #F3F3F3;
+            padding: 30px;
+            box-sizing: border-box;
+            font-family: arial;
+            line-height: 18px;
+            color: gray;
+        }
+        html, body, .container{
+            height: 100%;
+            background: #151515;
+        }
+        .container{
+            padding: 20px;
+            box-sizing: border-box;
+            border-radius: 20px;
+            line-height: 30px;
+        }
+        .logo{
+            width: 120px;
+            margin-bottom: 20px;
+        }
+        .titulo{
+            background-color: #00ec85;
+            width: 600px;
+            height: 60px;
+            padding: 11px;
+            box-sizing: border-box;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+        .titulo img{
+            width: 25px;
+            transition: .3s;
+        }
+        .section div:last-child{
+            width: 600px;
+            background-color: #fafafa;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .show{
+            display:block;
+        }
+        .hide{
+             display: none; 
+        }
+    </style>
+
+    <script>
+        function accordion(t){
+            var pai = document.getElementsByClassName('titulo')[t].parentElement;
+            var icone = document.getElementsByClassName('fa-solid')[t];
+            var conteudo = pai.lastElementChild.classList.contains('hide');
+
+            if(conteudo == true){
+                pai.lastElementChild.className = "show";
+                icone.classList.remove("fa-plus");
+                icone.classList.add("fa-minus");
+            }else{
+                pai.lastElementChild.className="hide";
+                icone.classList.add("fa-plus");
+                icone.classList.remove("fa-minus");
+            }
+
+        }
+        
+    </script>
+</head>
+<body>
+    <div class="container">
+
+        <div class="section">
+            <div class="titulo" onclick="accordion(0)">
+                <h3>Sessão01</h3>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="conteudo hide">
+                <p>Conteúdo da sessão 1</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="titulo" onclick="accordion(1)">
+                <h3>Sessão01</h3>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="conteudo hide">
+                <p>Conteúdo da sessão 1</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="titulo" onclick="accordion(2)">
+                <h3>Sessão01</h3>
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="conteudo hide">
+                <p>Conteúdo da sessão 1</p>
+            </div>
+        </div>
+
+
+    </div>
+    
+</body>
+</html>

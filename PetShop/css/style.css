@@ -451,6 +451,7 @@ main{
 /*Quem somos*/
 #QuemSomos{
     padding: 50px 20px 100px;
+    background: url(../img/pet2.png) 0% 0% / cover;
 }
 #QuemSomos h1 {
     font-family: Poppins;
@@ -525,6 +526,8 @@ main{
 
 #historias{
     padding: 50px 20px;
+    background: url(../img/pet3.png);
+    background-size: contain;
 }
 #historias article{
     margin-bottom: 50px;
@@ -604,8 +607,11 @@ main{
 #coment-text{
     padding-left: 10px;
 }
+.active{
+    display:block!important;
+}
 #autor{
-    display: none;
+    display: none; 
     border-left: 1px solid lightgray;
     padding: 20px;
     border-right: 1px solid lightgray;
@@ -671,7 +677,6 @@ main{
 /* Início footer */
 
 footer{
-    margin-top: 50px;
     background: #175ea8;
     background: #00a1e4;
     background-image: -webkit-linear-gradient(315deg, #00A1DE, #2477cd);

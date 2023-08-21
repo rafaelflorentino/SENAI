@@ -53,7 +53,7 @@ window.onload = function () {
     // Adiciona o ouvinte de evento 'scroll' ao objeto window.
     window.addEventListener('scroll', handleScroll);
 
-
+/*
     // Abrir e fechar o acordion
     let comentarios = document.querySelector("#comentarios-artigo h2");
     let icone = document.querySelector("#comentarios-artigo h2 i");
@@ -71,6 +71,21 @@ window.onload = function () {
             autor.style.display = "block";
         }
 
+    }
+*/
+    // Acordion 2
+    const accordion = document.getElementsByClassName('title-coment');// Pega os 3 titulos h2
+    
+    for ( i = 0; i < accordion.length; i++) {
+        accordion[i].addEventListener('click', function(){ // fico ouvido caso seja clicado
+
+            var pai = this.parentElement; // pego o pai
+            var filho = pai.lastElementChild; // pego o ultimo filho do pai o irmão
+
+            filho.classList.toggle('active');// adiciono a classe active para aparecer e desaparecer
+
+        })
+        
     }
 
     let enviarComentario = document.querySelector("#btn-enviar-comentario");

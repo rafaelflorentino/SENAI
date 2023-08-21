@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Combo&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Niconne&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Accordion</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #bedfe8;
+            flex-direction: column;
+        }
+        .accordion{
+            width: 800px;
+        }
+        .accordion .contentBx{
+            position: relative;
+            margin: 10px 20px;
+        }
+        .accordion .contentBx .label{
+            position: relative;
+            padding: 10px;
+            background: #2694af;
+            color: #fff;
+            cursor: pointer;
+        }
+        .accordion .contentBx .label::before{
+            content: '+';
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            font-size: 1.5em;
+        }
+        .accordion .contentBx.active .label::before{
+            content: '-';
+        }
+        .accordion .contentBx .content{
+            position: relative;
+            background: #fff;
+            height: 0;
+            overflow: hidden;
+            transition: 0.5s;
+            overflow-y: auto ;
+        }
+        .accordion .contentBx.active .content{
+            height: 150px;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="accordion">
+        <div class="contentBx">
+            <div class="label"> Titulo 1 accordion</div>
+            <div class="content">
+                <p>loreasfasfsasddsaadssdds afadfdas afadsfn</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion">
+        <div class="contentBx">
+            <div class="label"> Titulo 2 accordion</div>
+            <div class="content">
+                <p>loreasfasfsasddsaadssdds afadfdas afadsfn</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion">
+        <div class="contentBx">
+            <div class="label"> Titulo 3 accordion</div>
+            <div class="content">
+                <p>loreasfasfsasddsaadssdds afadfdas afadsfn</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const accordion = document.getElementsByClassName('contentBx');
+        for ( i = 0; i < accordion.length; i++) {
+            accordion[i].addEventListener('click', function(){
+                this.classList.toggle('active')
+            })
+            
+        }
+    </script>
+</body>
+</html>
