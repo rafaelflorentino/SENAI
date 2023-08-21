@@ -88,6 +88,61 @@ window.onload = function () {
         
     }
 
+    // Comentario 2
+
+    let coments = document.getElementsByClassName("btn-enviar-comentario");
+    
+
+    for ( i = 0; i < accordion.length; i++) {
+        coments[i].addEventListener('click', function(){
+            //console.log("clicou");
+            var cmt = this;
+            var pai = cmt.parentElement;
+            var avo = pai.parentElement;
+            //console.log(avo);
+            var filhos = avo.children;
+           // console.log(filhos);
+
+            var nome1; // irá recebe valor do input nome
+            var coment1; // irá recebe valor do input tex-area
+
+            for(filho of filhos){
+                if(filho.name == 'nome'){
+                    nome1=filho.value;                   
+                }
+                if(filho.name == 'text-area'){
+                    coment1= filho.value;         
+                }               
+            }
+          
+            // Criar html e pegar div
+            var bisavo = avo.parentElement;
+            var alvo = bisavo.firstElementChild;
+            //console.log(alvo);
+
+            let div = document.createElement('div');
+            div.classList.add("info-autor");
+            div.innerHTML = `
+            <img src="img/usuario.jpg" width="40" height="40" alt="foto usuario">
+            <div id="coment-text">
+                <h3>${nome1}</h3>
+                <p>${coment1}</p>
+            </div>`;
+
+            // Adiciona no html
+            alvo.appendChild(div);
+
+
+            // limpa os campos do formulario
+            for(filho of filhos){
+                filho.value = "";
+            }
+             
+
+        })
+    }
+
+/*
     let enviarComentario = document.querySelector("#btn-enviar-comentario");
 
 
@@ -121,7 +176,7 @@ window.onload = function () {
             document.getElementById("text-area").value = "";
         }
 
-    }
+    }*/
 
 
 }
