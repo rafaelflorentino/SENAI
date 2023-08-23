@@ -118,6 +118,18 @@ header #menu ul {
 header nav #menu li{
     margin-left: 10px;
 }
+header nav #menu li#login{ 
+    margin-left: 30px;
+}
+#login a{
+    background-color: #175ea8; 
+    padding: 7px 15px;
+}
+#login a:hover{
+    color:white;
+    opacity: 0.;
+    background-color: #1d3c5e;
+}
 
 header a{
     text-decoration: none;
@@ -714,7 +726,7 @@ footer{
     font-style: 200; 
 }
 #links-footer ul li a:hover{
-    color: #00a1e4;  
+    color: #1d5da2;  
 }
 #localizacao{
     text-align: left;
