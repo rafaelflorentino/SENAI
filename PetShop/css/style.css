@@ -1024,11 +1024,19 @@ footer{
 #pet-hostel{
     padding: 50px 0px;
     min-height: 100vh;
-    background: url(../img/dog-oculos.jpg);
+    padding: 50px 0px;
+    background: #e7f0f7 url(../img/pet.png);
     background-size: cover;
-    background-repeat: no-repeat;
     /* box-shadow: inset 0 0 0 100vw rgba(41, 41, 41, 0.75); */
     
+}
+
+#cont-pet-hostel img {
+    max-width: 450px;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 90px;
 }
 #cont-pet-hostel{
     padding: 20px;
@@ -1036,12 +1044,34 @@ footer{
 #cont-pet-hostel p{
     font-size: 20px;
     margin-bottom: 15px;
-    text-shadow: 0.1em 0.1em 0.4em #128dd6;
 }
 #cont-pet-hostel h2{
     color: #11345a;
-    font-size: 40px;
-    margin-bottom: 30px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/*Fim Pet Hostel*/
+
+/* Inicio nutricionista */
+#nutricionista{
+    padding: 50px 0px;
+    background: #e7f0f7 url(../img/pet2.png);
+    background-size: cover;
+}
+#conteudo-nutricionista{
+    padding: 20px;
+}
+#conteudo-nutricionista p {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+#nutricionista img{
+    max-width: 450px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 90px;
 }
 
 /* Responsividade */
@@ -1098,6 +1128,13 @@ footer{
         width: 100%;
         float: none;
         margin-left: 0px;
+        margin-bottom: 20px;
+    }
+
+    #conteudo-nutricionista img{
+        width: 100%;
+        float: none;
+        margin-right: 0px;
         margin-bottom: 20px;
     }
 
