@@ -1074,6 +1074,143 @@ footer{
     border-radius: 90px;
 }
 
+/* Fim do nutricionista */
+
+/* Inicío Consulta médica */
+#consulta-medica{
+    padding: 50px 0px;
+    background: #e7f0f7;
+    background: url(../img/pet3.png);
+    background-size: contain;
+}
+#cont-consulta{
+    padding: 0px 20px;
+}
+#cont-consulta form{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+#cont-consulta form label{
+    margin-bottom: 5px;
+    color:#175ea8;
+}
+#cont-consulta form input,select{
+    border-radius: 5px;
+    outline-style: none;
+}
+
+#cont-consulta form textarea{
+    margin-bottom: 10px;
+}
+#cont-consulta form button{
+    border: none;
+    color: white;
+    background: #00a1e4;
+    padding: 7px 0px;
+}
+#cont-consulta form button:hover{
+    background: #175ea8;
+}
+
+/* Fim consulta */
+
+/* Início Animais */
+
+#animais h1{
+    color: #175ea8;
+    font-family: 'Niconne';
+    font-size: 90px;
+    text-align: center;
+    font-weight: bold;
+}
+#animais p{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+#conteudo-gato,#conteudo-cachorro,#conteudo-ave,#conteudo-peixe,#conteudo-roedor,#conteudo-reptil{
+    padding: 50px 20px;
+}
+
+#parallax-gato{
+    height: 100vh;
+    background: url(../img/animais-gato.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 100vw rgba(41, 41, 41, 0.75);
+    padding: 0px 20px;    
+}
+#parallax-cachorro{
+    height: 100vh;
+    background: url(../img/animais-cachorro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 100vw rgba(41, 41, 41, 0.75);
+    padding: 0px 20px;    
+}
+#parallax-ave{
+    height: 100vh;
+    background: url(../img/animais-ave.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 100vw rgba(41, 41, 41, 0.75);
+    padding: 0px 20px;    
+}
+#parallax-peixe{
+    height: 100vh;
+    background: url(../img/animais-peixe.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 100vw rgba(41, 41, 41, 0.75);
+    padding: 0px 20px;    
+}
+#parallax-roedor{
+    height: 100vh;
+    background: url(../img/animais-roedor.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 100vw rgba(41, 41, 41, 0.75);
+    padding: 0px 20px;    
+}
+#parallax-reptil{
+    height: 100vh;
+    background: url(../img/animais-reptil.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 0 100vw rgba(41, 41, 41, 0.75);
+    padding: 0px 20px;    
+}
+
+
 /* Responsividade */
 @media (max-width: 450px){
     .carousel-item a > img {   
