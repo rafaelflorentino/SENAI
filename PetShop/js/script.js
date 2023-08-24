@@ -1,8 +1,7 @@
 /* Javascript */
 
-/* Abrir e Fechar mennu Mobile*/
-
 window.onload = function () {
+
     /* Abrir Menu mobile*/
     let btnMenu = document.getElementById("botao-menu");
     btnMenu.onclick = function () {
@@ -21,7 +20,7 @@ window.onload = function () {
         menu.style.opacity= "0";  
     };
 
-    /* Fechar o menu depois de ser clicado */
+    // Fechar o menu depois de ser clicado 
     menu.onclick = function () {
         menu.style.transition="0.5s";  
         menu.style.transform="translateX(100rem)";
@@ -34,6 +33,30 @@ window.onload = function () {
         menu.style.transform="translateX(100rem)";
         menu.style.opacity= "0";  
     };
+
+
+        /* Abrir login*/
+        let botaoLogin = document.getElementById("btn-login");
+        botaoLogin.onclick = function () {
+            login.style.display= "flex";    
+        };
+        /* Fechar login*/
+        let  botaoFecharLogin = document.getElementById("btn-close-login");
+        botaoFecharLogin.onclick = function () {
+            login.style.display= "none";   
+        };
+
+        /* Abrir login Mobile*/
+        let botaoLoginMobile = document.getElementById("btn-login-mobile");
+        botaoLoginMobile.onclick = function () {
+            login.style.display= "flex";    
+        };
+        /* Fechar login Mobile*/
+        let  botaoFecharLoginMobile = document.getElementById("btn-close-login");
+        botaoFecharLoginMobile.onclick = function () {
+            login.style.display= "none";   
+        };        
+    
 
     // Função para ser executada quando ocorrer o evento scroll.
     const seta = document.getElementById('seta');
@@ -141,42 +164,6 @@ window.onload = function () {
 
         })
     }
-
-/*
-    let enviarComentario = document.querySelector("#btn-enviar-comentario");
-
-
-    enviarComentario.onclick = function() {
-        let nome = document.getElementById("nome").value;
-        let comentario = document.getElementById("text-area").value;
-        let areaComentarios = document.getElementById("autores");
-       
-        if(nome == ""){
-            alert("Digite seu nome");    
-        }
-        if(comentario==""){
-            alert("Digite seu comentário");   
-        }else{
-            
-            // Criar comentario em html
-
-            let div = document.createElement('div');
-            div.classList.add("info-autor");
-            div.innerHTML = `
-            <img src="img/usuario.jpg" width="40" height="40" alt="foto usuario">
-            <div id="coment-text">
-                <h3>${nome}</h3>
-                <p>${comentario}</p>
-            </div>`;
-            // Adiciona no html
-            areaComentarios.appendChild(div);
-
-            // limpa os campos do formulario
-            document.getElementById("nome").value = "";
-            document.getElementById("text-area").value = "";
-        }
-
-    }*/
 
 
 }

@@ -121,15 +121,6 @@ header nav #menu li{
 header nav #menu li#login{ 
     margin-left: 30px;
 }
-#login a{
-    background-color: #175ea8; 
-    padding: 7px 15px;
-}
-#login a:hover{
-    color:white;
-    opacity: 0.;
-    background-color: #1d3c5e;
-}
 
 header a{
     text-decoration: none;
@@ -192,8 +183,123 @@ header #menu-mobile i:hover{
 header #menu-mobile a:hover{
     background: #cce9fd;
 }
+header nav #menu li#btn-login{
+    margin-left: 25px;
+}
+#btn-login a{
+    background-color: #175ea8; 
+    padding: 7px 15px;
+}
+#btn-login a:hover{
+    color:white;
+    opacity: 0.;
+    background-color: #1d3c5e;
+}
+#login{
+    display: none;
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 100002 !important;
+    opacity:1;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+#login:target {
+    opacity:1;
+    pointer-events: auto;
+}
+#login form{
+    position: absolute;
+    max-width: 300px;
+    margin: 0 auto;
+    background-color: #175ea8;
+    color: white;
+    padding: 25px;
+    z-index: 100000000 !important;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+#btn-close-login{
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#btn-close-login:hover{
+    color: #11345a;
+}
+#login form h1{
+    margin-bottom: 15px;
+    text-align: center;
+}
+#login form label{
+    margin-bottom: 5px;
+}
+#login form input{
+    text-indent: 10px;
+    width: 230px;
+    height: 30px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    outline-style: none;
+}
+#login form input::placeholder{
+    color: lightgray;
+    text-indent: 10px;
+}
+#login form p{   
+    text-align: center;
+}
+#login form p a{   
+    font-size: 16px;
+    color: #11345a;
+    font-weight: bold;
+}
+#login form p a:hover{   
+    color: white;
+}
+#login form button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 30px;
+    color: white;
+    background: #00a1e4;
+    border: none;
+    cursor: pointer;
+}
+#login form button:hover{
+    margin-bottom: 10px;
+    height: 30px;
+    color: white;
+    background: #11345a;
+    border: none;
+}
+
+/* Inicio Main*/
 main{
-    padding-top: 73px;
+    padding-top: 69px;
+}
+.titulo{ 
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 800;
+    color: #175ea8;
+    margin-bottom: 50px;
+    text-align: center; 
 }
 /* Inicio Espécies*/
 #especies{
@@ -299,7 +405,6 @@ main{
     transform: scale(1.1,1.1);
     opacity: 0.8;
 }
-
 
 /* Artigos */
 
@@ -458,8 +563,6 @@ main{
     font-weight: bold;
 }
 
-
-
 /*Quem somos*/
 #QuemSomos{
     padding: 50px 20px 100px;
@@ -517,7 +620,7 @@ main{
     animation-duration: 8s;
     animation-iteration-count: infinite;
   }
-  
+
   @keyframes seta {
     0%   {background-color: #11345a;}
     25%  {background-color: #11345a;}
@@ -738,6 +841,7 @@ footer{
 #localizacao p{
     margin-bottom: 10px;
     font-weight: 200;
+    line-height: 20px;
 }
 #localizacao p span{
     font-size: 12px;
@@ -780,6 +884,164 @@ footer{
 }
 #redes a:hover i{
     transform: rotate(360deg);
+}
+
+/* Fim Home */
+
+/* Inicio Página de Cadastro */
+#areaCadastro{
+    padding: 50px 0px;
+    height: 100vh;
+    background: url(../img/cachorro-gato.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 0 100vw rgba(41, 41, 41, 0.75);
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#cadastro-cliente{
+        width: 30%;
+        /* background: #175ea8; */
+        /* background-image: -webkit-linear-gradient(315deg, #175ea8, #0d4077); */
+        background: #175ea833;
+        margin: 0 auto;
+        padding: 25px;
+        color: white;
+        border-radius: 10px;
+        
+}
+#cadastro-cliente form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#cadastro-cliente form h1{
+    /* color: #11345a; */
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+#cadastro-cliente form label{
+    margin-bottom: 10px;
+}
+#cadastro-cliente form input{
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    text-indent: 10px;
+    height: 30px;
+}
+#cadastro-cliente form input::placeholder{
+    color: lightgray;
+    text-indent: 10px;
+}
+
+#cadastro-cliente form button{
+    height: 30px;
+    color: white;
+    background: #00a1e4;
+    border: none;
+    margin-top: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+}
+
+#cadastro-cliente form button:hover{
+    background: #11345a;
+
+}
+
+/* Fim Página de Cadastro */
+
+
+/* Inicio Página Banho e tosa */
+#banho-tosa{
+    padding: 50px 0px;
+    background: #e7f0f7;
+    background: url(../img/pet3.png);
+    background-size: contain;
+}
+#banho-tosa h1{
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 800;
+    color: #175ea8;
+    margin-bottom: 50px;
+    text-align: center;
+}
+#conteudo-banho{
+    padding: 20px;
+}
+#conteudo-banho img{
+    max-width: 450px;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 90px;
+}
+#conteudo-banho p{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+#conteudo-banho li{
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    font-weight: bold;
+    list-style: initial;
+}
+
+#btn-zap a{
+    background: green;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    max-width: 170px;
+    margin-top: 30px;
+}
+#btn-zap a:hover{
+    background: rgb(1, 82, 1);
+}
+#btn-zap a i{
+    margin-left: 5px;
+    font-size: 20px;
+    
+}
+/* Fim do banho e tosa */
+
+/* início Pet hostel */
+#pet-hostel{
+    padding: 50px 0px;
+    min-height: 100vh;
+    background: url(../img/dog-oculos.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* box-shadow: inset 0 0 0 100vw rgba(41, 41, 41, 0.75); */
+    
+}
+#cont-pet-hostel{
+    padding: 20px;
+}
+#cont-pet-hostel p{
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-shadow: 0.1em 0.1em 0.4em #128dd6;
+}
+#cont-pet-hostel h2{
+    color: #11345a;
+    font-size: 40px;
+    margin-bottom: 30px;
 }
 
 /* Responsividade */
@@ -832,6 +1094,13 @@ footer{
     #redes-footer p{
         line-height: 20px;
     }
+    #conteudo-banho img{
+        width: 100%;
+        float: none;
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+
 
 
 }
@@ -869,6 +1138,13 @@ footer{
         background: white;
         flex-direction: column;
     }
+    #conteudo-banho img{
+        width: 100%;
+        float: none;
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+
 }
 @media (max-width: 765px){
     header #menu{
@@ -886,6 +1162,9 @@ footer{
     .cartao-item {
         margin-bottom: 20px;
     }
+    #cadastro-cliente {
+        width: 85%;
+    }
 }
 @media (max-width: 945px){
     #cont-cards {
@@ -893,6 +1172,7 @@ footer{
         justify-content: space-around;
 
     }
+
 }
 
 
