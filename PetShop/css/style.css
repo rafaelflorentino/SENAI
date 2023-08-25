@@ -1274,6 +1274,12 @@ footer{
         margin-right: 0px;
         margin-bottom: 20px;
     }
+    #cont-pet-hostel img{
+        width: 100%;
+        float: none;
+        margin: 0px;
+        margin-bottom: 20px;
+    }
 
 
 
