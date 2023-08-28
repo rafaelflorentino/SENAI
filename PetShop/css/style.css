@@ -1117,6 +1117,10 @@ footer{
 #cont-consulta form button:hover{
     background: #175ea8;
 }
+.campos{
+    border: 1px solid lightgray;
+    padding: 5px;
+}
 
 /* Fim consulta */
 

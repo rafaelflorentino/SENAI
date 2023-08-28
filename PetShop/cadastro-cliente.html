@@ -86,7 +86,7 @@
                     <label for="nascimento">Data de Nascimento</label>
                     <input type="text" name="nascimento" id="nascimento" placeholder="00/00/0000" required>  
                     
-                    <button>Cadastrar</button>
+                    <button id="btn-cadastro">Cadastrar</button>
                 </form>
             </div>
         </section>
@@ -142,6 +142,32 @@
         </div>
 
     </footer>
+    <script>
+        // Formulário Marcar Consulta
+        var botaoMarcar = document.getElementById("btn-cadastro");
+    
+        botaoMarcar.addEventListener("click", (e) => {
+            e.preventDefault();
+            let nome = document.querySelector("#nome").value;
+            let endereco = document.querySelector("#endereco").value;
+            let telefone = document.querySelector("#telefone").value;
+            let nascimento = document.querySelector("#nascimento").value;
+    
+            if(nome == "" || endereco =="" || telefone =="" || nascimento ==""){
+                alert("Preencha todos os campos");
+            }else{
+                
+                alert("Usuário Cadastrado com sucesso.\nNome: : "+nome + "\nEndereco: "+ endereco+ "\nTelefone(a): "+ telefone+"\nNascimento: "+nascimento);
+    
+                // Limpar inputs
+                document.querySelector("#nome").value="";
+                document.querySelector("#endereco").value="";
+                document.querySelector("#telefone").value="";
+                document.querySelector("#nascimento").value="";
+                }  
+        });
+    
+        </script>
 
      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
      <script src="js/script.js"></script>

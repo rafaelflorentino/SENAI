@@ -76,26 +76,6 @@ window.onload = function () {
     // Adiciona o ouvinte de evento 'scroll' ao objeto window.
     window.addEventListener('scroll', handleScroll);
 
-/*
-    // Abrir e fechar o acordion
-    let comentarios = document.querySelector("#comentarios-artigo h2");
-    let icone = document.querySelector("#comentarios-artigo h2 i");
-    var autor = document.getElementById("autor");
-
-    comentarios.onclick = function () {
-        
-        if(autor.style.display == "block") {
-            icone.classList.remove("fa-minus");
-            icone.classList.add("fa-plus");
-            autor.style.display = "none";
-        }else{
-            icone.classList.remove("fa-plus");
-            icone.classList.add("fa-minus");
-            autor.style.display = "block";
-        }
-
-    }
-*/
     // Acordion 2
     const accordion = document.getElementsByClassName('title-coment');// Pega os 3 titulos h2
     
@@ -106,25 +86,18 @@ window.onload = function () {
             var filho = pai.lastElementChild; // pego o ultimo filho do pai o irmão
 
             filho.classList.toggle('active');// adiciono a classe active para aparecer e desaparecer
-
-        })
-        
+        });
     }
 
     // Comentario 2
-
     let coments = document.getElementsByClassName("btn-enviar-comentario");
     
-
     for ( i = 0; i < accordion.length; i++) {
         coments[i].addEventListener('click', function(){
-            //console.log("clicou");
             var cmt = this;
             var pai = cmt.parentElement;
             var avo = pai.parentElement;
-            //console.log(avo);
             var filhos = avo.children;
-           // console.log(filhos);
 
             var nome1; // irá recebe valor do input nome
             var coment1; // irá recebe valor do input tex-area
@@ -161,9 +134,31 @@ window.onload = function () {
                 filho.value = "";
             }
              
-
-        })
+        });
     }
 
+
+// Formulário Login
+    var botaologar = document.getElementById("btn-entrar");
+
+    botaologar.addEventListener("click", (e) => {
+        e.preventDefault();
+        let usuario = document.querySelector("#usuario").value;
+        let senha = document.querySelector("#senha").value;
+
+        if(usuario == "" || senha ==""){
+            alert("Preencha todos os campos");
+        }else{
+            
+            alert("Usuario: "+usuario +" Logado com sucesso.");
+
+            // Limpar inputs
+            document.querySelector("#usuario").value="";
+            document.querySelector("#senha").value="";
+
+            }  
+    });        
+
+    
 
 }

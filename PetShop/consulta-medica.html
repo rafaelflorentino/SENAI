@@ -76,19 +76,19 @@
 
                 <form action="">
                     <label for="data">Data da consulta</label>
-                    <input type="date" name="data"><br>
+                    <input type="date" name="data" class="campos" id="data" required><br>
                     <label for="horario">Horário da consulta</label>
-                    <input type="time" name="hora"><br>
+                    <input type="time" name="hora" class="campos" id="horario" required><br>
                     <label for="medicos">Médico</label>
-                    <select name="medicos" id="medicos">
+                    <select name="medicos" id="medicos" class="campos" required>
                         <option value="paulo">Paulo</option>
                         <option value="beatriz">Beatriz</option>
                         <option value="daniel">Daniel</option>
                         <option value="priscila">Priscila</option>
                     </select><br>
                     <label for="motivo">Motivo da  consulta</label>
-                    <textarea name="motivo" id="motivo" cols="30" rows="10"></textarea>
-                    <button>Marcar</button>
+                    <textarea name="motivo" id="motivo" cols="30" rows="10" class="campos" required></textarea>
+                    <button id="marcar">Marcar</button>
                 </form>
             </div>
         </section>
@@ -145,6 +145,32 @@
         </div>
 
     </footer>
+    <script>
+    // Formulário Marcar Consulta
+    var botaoMarcar = document.getElementById("marcar");
+
+    botaoMarcar.addEventListener("click", (e) => {
+        e.preventDefault();
+        let data = document.querySelector("#data").value;
+        let horario = document.querySelector("#horario").value;
+        let medico = document.querySelector("#medicos").value;
+        let motivo = document.querySelector("#motivo").value;
+
+        if(data == "" || horario =="" || medico =="" || motivo ==""){
+            alert("Preencha todos os campos");
+        }else{
+            
+            alert("Consulta Marcada com sucesso.\nData: "+data + "\nHorario: "+ horario+ "\nMédico(a): "+ medico+"\nMotivo: "+motivo);
+
+            // Limpar inputs
+            document.querySelector("#data").value="";
+            document.querySelector("#horario").value="";
+            document.querySelector("#medicos").value="";
+            document.querySelector("#motivo").value="";
+            }  
+    });
+
+    </script>
 
      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
      <script src="js/script.js"></script>
