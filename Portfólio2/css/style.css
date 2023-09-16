@@ -231,15 +231,14 @@ main p {
 
 /* Início Home*/
 #home{
-    background:lightgray;
+    background: url('../img/Desktop.jpg') lightgray  no-repeat center;
+    background-attachment: fixed !important;
+    background-size: cover;
 }
 #home #container-home{
     max-width: 1450px;
     margin: 0 auto;
     height: 50vh;
-    background: url('../img/Desktop.jpg') lightgray  no-repeat center;
-    background-attachment: fixed !important;
-    background-size: cover;
     margin: 0 auto;
     padding: 170px 40px;  
 }
