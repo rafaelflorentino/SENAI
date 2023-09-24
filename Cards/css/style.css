@@ -45,6 +45,11 @@ table {
 /* Fim Reset */
 @import url('https://fonts.googleapis.com/css2?family=Combo&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Niconne&family=Poppins:ital,wght@1,900&display=swap');
 
+
+html{
+    background: url(../img/papel-amassado.jpg);
+    background-size: cover;
+}
 /* Inicio seção de cards*/
 
 .container{
@@ -60,15 +65,16 @@ table {
 }
 
 #section-cards{
-    background-color: lightgray;
+    background-color: white;
     height: 100%;
     padding: 20px 0px;
     margin: 10px 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    /*box-shadow: 5px 5px 5px rgba(70, 70, 70, 0.798);*/
     box-shadow: 5px 5px 5px rgba(70, 70, 70, 0.798);
-    border-radius: 4px;
+    border-radius: 8px;
     color: white;
 
 }
@@ -208,6 +214,9 @@ table {
 #joaquin:hover{
     background: url(../img/matriz2.gif) right bottom;
 }
+#joaquim .description-card{
+    animation: piscar 1s infinite;
+}
 
 /* Mateus */
 
@@ -227,6 +236,10 @@ table {
     transition: 0.9s;
     opacity: 0.8;
 }
+#lucas .link-card{
+    background-color: #00BCD4;
+    box-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 1px #03A9F4, 0 0 20px #2196F3, 0 0 25px #03A9F4, 0 0 30px #00BCD4, 0 0 25px #cde9fe;
+}
 
 #lucas .title-card{
     text-shadow: 0.1em 0.1em 0.2em black;
@@ -243,6 +256,7 @@ table {
 #marcos .description-card{
     color: #0c73b8;
 }
+
 #marcos:hover{
     filter: grayscale(75%);
 }
@@ -258,12 +272,42 @@ table {
 #daniel .description-card{
     color: #0c73b8;
 }
+#daniel .link-card:hover {
+    border: 2px solid #0c73b8;
+    transform: scale(1.5);
+    background-color: #00A1DE;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px -1px 0px #000000;
+}
 
 /* Rute */
 #rute{
     background: url(../img/dark.jpg);
     background-size: cover;
 }
+
+#rute .link-card{
+    position: relative;
+    overflow: hidden;
+  }
+
+  #rute .link-card:after {
+    animation: sheen 1s 5s infinite; /*infinite*/
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to bottom, transparent, rgba(255,255,255,0.5) 50%, transparent);
+    transform: rotateZ(60deg) translate(-1em, 4em);
+}
+
+  @keyframes sheen {
+      100% {
+          transform: rotateZ(60deg) translate(0, -4em);
+          }
+      }
 
 
 /* Ester */
@@ -287,6 +331,22 @@ table {
 #cecilia:hover{
     filter: brightness(90%);
 }
+#cecilia .link-card{
+    background-color: rgb(208 179 140);
+    animation: jump 1s 2s infinite cubic-bezier(.84,-0.54,.31,1.19);
+}
+#cecilia .link-card:hover{
+    background-color: rgb(rgb(165 114 70));
+    animation: none;
+}
+@keyframes jump {
+    0% {
+        transform: none;
+    }
+    50% {
+        transform: translateY(-2em);
+    }
+    }
 /* Paulo */
 
 #paulo{
@@ -333,6 +393,44 @@ table {
 #pedro .description-card{
     color: olivedrab;
 }
+#pedro .link-card{
+    animation: waggle infinite 6s;
+}
+
+@keyframes waggle {
+    47% {
+        transform: scale(1);
+    }
+    48% {
+        transform: scale(1.1);
+    }
+    50% {
+        rotate: 0deg;
+    }
+    56% {
+        rotate: 10deg;
+    }
+    61% {
+        rotate: -10deg;
+    }
+    64% {
+        rotate: 10deg;
+    }
+    71% {
+        rotate: -10deg;
+        transform: scale(1.1);
+    }
+    72% {
+        rotate: 0deg;
+        transform: scale(1.05);
+    }
+    73% {
+        transform: scale(1);
+    }
+    100% {
+        rotate: 0deg;
+    }
+}
 
 /* carlos */
 #carlos{
@@ -354,6 +452,8 @@ table {
     100% {background-color: #11345a;}
   }
 
+
+
 /* Miguel */
 #miguel{
     background: #5a9de6;
@@ -368,6 +468,19 @@ table {
 #miguel:hover{
     cursor: pointer;
     transform: rotateY(180deg);
+}
+@keyframes neon {
+    0% {
+        box-shadow: 0 0 30px #a80000;
+    }
+
+    50% {
+        box-shadow: 0 0 30px #0202f0;
+    }
+
+    100% {
+        box-shadow: 0 0 30px #1daa1d;
+    }
 }
 
 #miguel .flipp-back {
