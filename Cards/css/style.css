@@ -1,0 +1,411 @@
+/* Início Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* Fim Reset */
+@import url('https://fonts.googleapis.com/css2?family=Combo&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Niconne&family=Poppins:ital,wght@1,900&display=swap');
+
+/* Inicio seção de cards*/
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.container h1{
+    font-size: 5em;
+    color: #0c73b8;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+
+}
+
+#section-cards{
+    background-color: lightgray;
+    height: 100%;
+    padding: 20px 0px;
+    margin: 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 5px 5px 5px rgba(70, 70, 70, 0.798);
+    border-radius: 4px;
+    color: white;
+
+}
+.card{
+    width: 240px;
+    height: 400px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #c5c1c1;
+    box-shadow: 11px 11px 19px rgba(0, 0, 0, 0.623);
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    border-top: 1px solid rgba(254, 254, 254, 0.534);
+    border-top: 1px solid rgba(254, 254, 254, 0.534);
+    text-align: center;
+    transition: 0.4s;
+    font-family: 'Poppins', sans-serif;
+}
+.card:hover {
+    background-color: #8c8b8b;
+}
+.img-card{
+    border-radius: 50%;
+    width: 150px;
+    height: auto;
+}
+.title-card{
+    font-size: 1.9em;
+    margin: 1.4rem 0;
+}
+.description-card{
+    text-align: center;
+    font-size: 1em;
+}
+.link-card{
+    margin: 1.9rem;
+    padding: 0.9rem 1.9rem;
+    border-radius: 28px;
+    font-size: larger;
+    color: white;
+    text-decoration: none;
+    background-color: rgba(224, 28, 28, 0.782);
+    transition: 0.4s;
+}
+.link-card:hover{
+    background-color: rgba(133, 8, 8, 0.782);
+
+}
+/* Rafael */
+#rafael{
+    background: url(../img/galxia-laranja.jpg) left bottom;
+    transition: 5s;
+}
+#rafael:hover{
+    background: url(../img/galxia-laranja.jpg) right bottom;
+}
+/* Ciclano */
+#ciclano{
+    background: url(../img/galaxia_preto_laranja.jpg) left bottom;
+    transition: 5s;
+}
+#ciclano:hover{
+    background: url(../img/galaxia_preto_laranja.jpg) right bottom;
+}
+#ciclano .link-card:hover{
+    color: orangered;
+    background-color: white;
+}
+
+/* Beltrano */
+
+#beltrano{
+    background: url(../img/galaxia-preto-vernelho.jpg) left bottom;
+    transition: 5s;
+}
+#beltrano:hover{
+    background: url(../img/galaxia-preto-vernelho.jpg) right bottom;
+    box-shadow: 11px 11px 19px rgb(178 68 59)
+}
+
+/* João */
+
+#joao{
+    background: url(../img/galaxia-azul.jpg) left bottom;
+    transition: 5s;
+}
+#joao:hover{
+    background: url(../img/galaxia-azul.jpg) right bottom;
+}
+#joao .img-card:hover{
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.886);
+}
+#joao .link-card:hover{
+    background-color: #4448bd;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.886);
+}
+
+/* Maria */
+
+#maria{
+    background: url(../img/estrela-vermelha.jpg) left bottom;
+    transition: 5s;
+}
+#maria:hover{
+    background: url(../img/estrela-vermelha.jpg) right bottom;
+}
+
+/* José */
+
+#jose{
+    background: url(../img/galaxia_roxa.jpg) left bottom;
+    transition: 5s;
+}
+#jose:hover{
+    background: url(../img/galaxia_roxa.jpg) right bottom;
+}
+
+/* Ana */
+
+#ana{
+    background: url(../img/matriz1.gif) left bottom;
+    transition: 5s;
+}
+#ana:hover{
+    background: url(../img/matriz1.gif) right bottom;
+}
+
+
+/* Joaquin */
+
+#joaquin{
+    background: url(../img/matriz2.gif) left bottom;
+    transition: 5s;
+}
+#joaquin:hover{
+    background: url(../img/matriz2.gif) right bottom;
+}
+
+/* Mateus */
+
+#mateus{
+    background-image: -webkit-linear-gradient(315deg, #00A1DE, #0a3058);
+}
+#mateus:hover{
+    transition: 0.9s;
+    transform: scale(1.1,1.1);
+}
+
+/* Lucas */
+#lucas{
+    background-image: -webkit-linear-gradient(315deg, #0c73b8, #fd4c00);
+}
+#lucas:hover{
+    transition: 0.9s;
+    opacity: 0.8;
+}
+
+#lucas .title-card{
+    text-shadow: 0.1em 0.1em 0.2em black;
+}
+
+/* Marcos */
+#marcos{
+    background: url(../img/pet.png) #cde9fe;
+    background-size: contain;
+}
+#marcos .title-card{
+    color: #00A1DE;
+}
+#marcos .description-card{
+    color: #0c73b8;
+}
+#marcos:hover{
+    filter: grayscale(75%);
+}
+
+/* Daniel */
+#daniel{
+    background: url(../img/papel-amassado.jpg);
+    background-size: cover;
+}
+#daniel .title-card{
+    color: #00A1DE;
+}
+#daniel .description-card{
+    color: #0c73b8;
+}
+
+/* Rute */
+#rute{
+    background: url(../img/dark.jpg);
+    background-size: cover;
+}
+
+
+/* Ester */
+
+#ester{
+    background: url(../img/madeira.jpg);
+    background-size: cover;
+    opacity: 0.8;
+}
+#ester:hover{
+    opacity: 1;
+}
+
+
+
+/* Cecilia */
+#cecilia{
+    background: url(../img/fundo-de-madeira-natural.jpg);
+    background-size: cover;
+}
+#cecilia:hover{
+    filter: brightness(90%);
+}
+/* Paulo */
+
+#paulo{
+    background: linear-gradient(
+    90deg,
+    #000000,
+    #50577a,
+    #ffffff,
+    #50577a,
+    #000000
+);
+    background-size: 300% 300%;
+    animation: colors-mid  5s ease infinite;
+    opacity: 0.5;
+    transition: 0.3s;
+    margin: 10px;
+    box-shadow: 10px 10px 20px rgb(10, 10, 10);
+    z-index: 111;
+}
+
+@keyframes colors-mid {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Pedro */
+#pedro{
+    background: url(../img/skulls.png);
+    background-size: cover;
+}
+
+#pedro .title-card{
+    color: olive;
+}
+#pedro .description-card{
+    color: olivedrab;
+}
+
+/* carlos */
+#carlos{
+    background: #11345a;
+    
+}
+#carlos{
+    animation-name: mudar;
+    animation-timing-function: linear;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes mudar {
+    0%   {background-color: #11345a;}
+    25%  {background-color: #11345a;}
+    50%  {background-color: gray;}
+    75%  {background-color: grau;}
+    100% {background-color: #11345a;}
+  }
+
+/* Miguel */
+#miguel{
+    background: #5a9de6;
+    animation: neon 5s alternate infinite ease-in-out;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transform-style: preserve-3d;
+    transition: transform 1.5s;
+    perspective: 1000px;
+}
+#miguel:hover{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+#miguel .flipp-back {
+    background: #5a9de6;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(180deg);
+    background-color: #5a9de6;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 15px;
+}
+#miguel.flipp-front, #miguel .flipp-back {
+    text-align: center;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+#miguel .destaque{
+    color: blue;
+}
+#miguel .link-card{
+    background-color: rgb(37, 37, 240);
+    opacity: 0.8;
+}
+#miguel .link-card:hover{
+    background-color: blue;
+    opacity: 1;
+}
+#miguel .img-card{
+    margin-bottom: 25px;
+}
+
+
+/* Fim seção de cards*/
